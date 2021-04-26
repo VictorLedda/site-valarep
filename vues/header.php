@@ -27,20 +27,26 @@ require_once('config/bdd.php');
 
 <header class='header'>
 
-<img class='logo' src='images/logo-png.png' />
+<a  href='index.php'><img class='logo' src='images/logo-png.png' /></a>
 
 <nav>
     <ul class='menu'>
-        <li>Accueil</li>
-        <li>Nos offres</li>
-        <li>Nos formations</li>
-        <li>Chateau fortier</li>
-        <li>Nous contacter</li>
-        <li>ENT</li>
-        <li>GED</li>
+        <a  href='index.php'><li>Accueil</li></a>
+       <a href='offres.php'> <li>Nos offres</li></a>
+       <a href='index.php'>  <li>Nos formations</li></a>
+       <a href='index.php'> <li>Chateau fortier</li></a>
+       <a href='contact.php'> <li>Nous contacter</li></a>
+       <a href='https://valarep.fr/ent-valarep/'> <li>ENT</li></a>
+       <a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'> <li>GED</li></a>
     <ul>
 
 </nav>
+
+<div class='esapce-membre'>
+<h3>Espace membre</h3>
+<img class='image-membre' src='images/compte-png.png' />
+
+<div>
 
 
 

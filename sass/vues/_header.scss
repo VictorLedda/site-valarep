@@ -4,25 +4,51 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    box-shadow: -1px 7px 29px -18px #000000;
 
     .logo{
-        width: 150px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
         margin-left: 50px;
-        margin-top: 10px;
+        margin-top: 2px;
     }
 
     nav{
-        width: 75%;
+        width: 65%;
+        margin-top: 10px;
+       
     }
     .menu{
         width: 100%;
         display: flex;
         justify-content: space-around;
 
-        li{
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
+            a{
+                color: black;
+                  li{
+            font-size: 15px;
+            font-family: 'Architects Daughter', cursive;
+                }
+            }
         }
+}
+
+
+.esapce-membre{
+    display: flex;
+   
+h3{
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: 'Architects Daughter', cursive;
+}
+    .image-membre{
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 50px;
+        height: 50px ;
     }
+
+
 }

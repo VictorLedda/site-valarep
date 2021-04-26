@@ -6,4 +6,8 @@ body {
 ul {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=normalize.css.map */
