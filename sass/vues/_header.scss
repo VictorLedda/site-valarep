@@ -1,0 +1,28 @@
+.header{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        width: 150px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    nav{
+        width: 75%;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        li{
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}

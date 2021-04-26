@@ -1,0 +1,33 @@
+
+@import './normalize.scss';
+
+// Vues //
+
+@import './vues/header';
+@import './vues/footer';
+
+
+
+
+// Admin //
+
+@import './admin/accueil';
+@import './admin/reservations';
+@import './admin/contact/ajout-contact.scss';
+@import './admin/contact/tous-les-contact.scss';
+@import './admin/formations/apprentissage';
+@import './admin/formations/professionelles';
+@import './admin/offres/ajout-offre';
+@import './admin/offres/toutes-les-offres';
+
+
+// Interface //
+
+@import './components/accueil';
+@import './components/contact';
+@import './components/offres';
+@import './components/reservations';
+@import './components/chateau/decrouvrir';
+@import './components/formations/apprentissage';
+@import './components/formations/professionelles';
+
