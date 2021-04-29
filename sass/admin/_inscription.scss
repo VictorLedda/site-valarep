@@ -1,0 +1,56 @@
+
+.inscription{
+    width: 50%;
+    height: 600px;
+    margin: 150px auto 0px auto;
+    background-color: #f4f4f4;
+    border: 1px solid #649fba;
+.titre-inscription{
+    font-family: 'Roboto', sans-serif; 
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+    .form-inscription{
+        display: flex;
+        flex-direction: column;
+        
+         input[type=text] {
+             width: 60%;
+             height: 37px;
+             margin: 10px auto 10px auto;
+             font-family: 'Architects Daughter', cursive;
+         } 
+         input[type=file]{
+            width: 60%;
+            height: 37px;
+            margin: 10px auto 10px auto;
+            font-family: 'Architects Daughter', cursive;
+         }
+
+         input[type=password]{
+            width: 60%;
+            height: 37px;
+            margin: 10px auto 10px auto;
+            font-family: 'Architects Daughter', cursive;
+         }
+         input[type=submit]{
+             width: 200px;
+             height: 40px;
+             margin: 30px auto 0px auto;
+            
+             border-radius: 10px;
+             color: white;
+             font-family: 'Architects Daughter', cursive;
+             background-color: #649fba;
+             border: none;
+             font-size: 20px;
+         }
+    }
+
+}
+.titre-inscription{
+    text-align: center;
+}
+body{
+    margin: 0px;
+}

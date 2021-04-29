@@ -1,0 +1,138 @@
+.titre-conatct{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.contact-pricipal{
+display: flex;
+justify-content: center;
+    .image-contact-principal{
+        width: 650px;
+        height: 400px;
+    }
+
+    .trait-gris{
+        height: 2px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #414143;
+    }
+
+.informations-contact{
+    
+    position: relative;
+    top: 50px;
+    right: 50px;
+    width: 280px;
+    height: 280px;
+    background-color: #649fba;
+
+    .test{
+        display: flex;
+    }
+    .trait-blanc{
+        
+        height: 150px;
+        width: 1px;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .titre-contact-principal{
+        margin-left: 25px;
+        color: white;
+        font-family: 'Roboto', sans-serif; 
+    }
+    .information-contact{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+      
+       
+        .information-contact-titre{
+            font-family: 'Athiti', sans-serif;
+            color: white;
+            margin: 0px;
+            padding-left: 15px;
+        }
+
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+}
+}
+
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    .photo-contact{
+        width: 300px;
+        height: 300px;
+        box-shadow: -120px -120px 0px -100px #649fba;
+    }
+
+    .infos-contact{
+
+       .contact-fonction{
+           font-size: 40px;
+           font-family: 'Roboto', sans-serif; 
+           font-weight: 1500;
+       } 
+
+       .trait-bleu-contact{
+           height: 40px;
+           width: 2px;
+           background-color: #649fba;
+           margin-right: 30px;
+       }
+.partie-contact{
+
+    display: flex;
+    
+       .nom-contact{
+           font-size: 30px;
+           margin: 0px;
+           font-family: 'Roboto', sans-serif; 
+       }
+    }
+       .infos-contact{
+           display: flex;
+           padding-top: 30px;
+           padding-top: 80px;
+           .icon-contact{
+
+        
+           width: 28px;
+           height: 28px;
+         }
+
+            .contact-tel{
+           margin: 0px;
+           font-family: 'Architects Daughter', cursive;
+           margin-left: 15px;
+           
+       }
+       }
+    }
+
+
+
+
+}
+
+.trait-gris{
+    
+    width: 80%;
+    height: 2px;
+    background-color: #414143;
+    margin: 80px auto 80px auto;
+    
+}

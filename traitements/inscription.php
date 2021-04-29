@@ -1,40 +1,37 @@
 <?php
-require('config/bd.php');
+require('../vues/head_admin.php');
+require('../config/bdd.php');
 $erreurs = null;
 
-if(isset($_POST['inscription-bouton'])){
+
 
    
 
-$login_inscription = htmlspecialchars($_POST['inscription-login']);
-$mail1 = htmlspecialchars($_POST['inscription-adresse-mail1']);
-$mail2 = htmlspecialchars($_POST['inscription-adresse-mail2']);
+
+$identifiant =  htmlspecialchars($_POST['inscription-identifiant']);
 $mdp1 =  htmlspecialchars(sha1($_POST['inscription-mdp1']));
 $mdp2 =  htmlspecialchars(sha1($_POST['inscription-mdp2']));
+$photo =  htmlspecialchars($_FILES['inscription-photo']['name']);
 
 
 
      
-if( $mail1 == $mail2 && $mdp1 == $mdp2){
-    $bio = "Je suis nouveau sur ce réseau social, quelqu' un peut m'aider";
-    $insertion = $pdo->prepare('INSERT INTO user(login, mdp, email, bio) VALUES( ?, ?, ?, ?)');
-    $insertion->execute(array($login_inscription, $mdp1, $mail1, $bio));
+if( $mdp1 == $mdp2){
+  
+    $insertion = $pdo->prepare('INSERT INTO user(identifiant, mdp, photo) VALUES( ?, ?, ?)');
+    $insertion->execute(array($identifiant, $mdp1, $photo));
     
-    $req = $pdo->prepare("SELECT * FROM user WHERE login = ? AND mdp = ?");
-    $req->execute(array($login_inscription, $mdp1));
+    $req = $pdo->prepare("SELECT * FROM user WHERE identifiant = ? AND mdp = ?");
+    $req->execute(array($identifiant, $mdp1));
     
     $userinfo = $req->fetch();
+   
     $_SESSION['id'] = $userinfo['id'];
-    header("Location: index.php?action=accueil&id=".$userinfo['id']."&ProfilActif=".$_SESSION['id']);
+    header("Location: index.php?action=accueil&id=".$userinfo['id']);
 
     
-}else{
-$erreurs = "Il y a une erreur";
-                            }
-                        }      
 
-if(isset($erreurs)){
-    echo $erreurs;
+
 }
 
 

@@ -1,5 +1,5 @@
 
-@import './normalize.scss';
+@import './components/normalize';
 
 // Vues //
 
@@ -11,10 +11,12 @@
 
 // Admin //
 
+@import './admin/inscription';
+@import './admin/connexion';
 @import './admin/accueil';
 @import './admin/reservations';
-@import './admin/contact/ajout-contact.scss';
-@import './admin/contact/tous-les-contact.scss';
+@import './admin/contact/ajout-contact';
+@import './admin/contact/tous-les-contact';
 @import './admin/formations/apprentissage';
 @import './admin/formations/professionelles';
 @import './admin/offres/ajout-offre';

@@ -11,7 +11,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 .header {
+  position: relative;
+  z-index: 10;
   height: 80px;
   width: 100%;
   display: -webkit-box;
@@ -72,5 +79,1133 @@ a {
   margin-top: 10px;
   width: 50px;
   height: 50px;
+}
+
+footer {
+  background-color: #414143;
+  width: 100%;
+  height: 130px;
+}
+
+footer nav {
+  margin-top: 10px;
+  margin: auto;
+}
+
+footer .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+footer .menu a {
+  color: black;
+}
+
+footer .menu a li {
+  font-size: 18px;
+  font-family: 'Architects Daughter', cursive;
+  color: #f4f4f4;
+}
+
+footer .trait-gris {
+  margin: 0px auto 0px auto;
+  width: 85%;
+  background-color: #f4f4f4;
+  height: 1px;
+}
+
+footer .infos-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .infos-footer .facebook {
+  width: 40px;
+  height: 40px;
+}
+
+footer .infos-footer .mentions-legales {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f4f4f4;
+  font-weight: 200;
+  padding-top: 15px;
+}
+
+footer .infos-footer .infos-facebook {
+  padding-top: 10px;
+}
+
+footer .infos-footer .infos-facebook span {
+  position: relative;
+  bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+  color: #f4f4f4;
+}
+
+.inscription {
+  width: 50%;
+  height: 600px;
+  margin: 150px auto 0px auto;
+  background-color: #f4f4f4;
+  border: 1px solid #649fba;
+}
+
+.inscription .titre-inscription {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.inscription .form-inscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inscription .form-inscription input[type=text] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.inscription .form-inscription input[type=file] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.inscription .form-inscription input[type=password] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.inscription .form-inscription input[type=submit] {
+  width: 200px;
+  height: 40px;
+  margin: 30px auto 0px auto;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #649fba;
+  border: none;
+  font-size: 20px;
+}
+
+.titre-inscription {
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+.connexion {
+  width: 50%;
+  height: 600px;
+  margin: 150px auto 0px auto;
+  background-color: #f4f4f4;
+  border: 1px solid #649fba;
+}
+
+.connexion .titre-connexion {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.connexion .form-connexion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.connexion .form-connexion input[type=text] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.connexion .form-connexion input[type=file] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.connexion .form-connexion input[type=password] {
+  width: 60%;
+  height: 37px;
+  margin: 10px auto 10px auto;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.connexion .form-connexion input[type=submit] {
+  width: 200px;
+  height: 40px;
+  margin: 30px auto 0px auto;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #649fba;
+  border: none;
+  font-size: 20px;
+}
+
+.titre-connexion {
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+.titre-center {
+  text-align: center;
+  margin: auto;
+}
+
+.div-vide {
+  width: 300px;
+  height: 100%;
+  display: block;
+  z-index: -10;
+}
+
+.trait-gris-separateur {
+  width: 80%;
+  margin: 40px auto 50px auto;
+  height: 1px;
+  background-color: #414143;
+}
+
+.ajouter {
+  margin-top: 30px;
+  margin-right: 50px;
+  float: right;
+  width: 200px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  background-color: #649fba;
+  border-radius: 10px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.select {
+  height: 40px;
+  border: 1px solid #649fba;
+}
+
+.select option {
+  height: 40px;
+}
+
+.bouton-personnalise {
+  height: 50px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #649fba;
+  margin: auto;
+}
+
+.bouton-personnalise .image-default {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.bouton-personnalise span {
+  font-family: 'Architects Daughter', cursive;
+  margin-top: 15px;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .bouton-deconnexion:hover {
+  cursor: pointer;
+}
+
+header .bouton-deconnexion {
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+  width: 200px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  background-color: #649fba;
+  border-radius: 10px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.sidebar {
+  z-index: 10;
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  background-color: #414143;
+}
+
+.sidebar .onlets-sidebar:hover {
+  background-color: #0275a9;
+}
+
+.sidebar .onlets-sidebar {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar .onlets-sidebar .icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.sidebar .onlets-sidebar .nom-onglets {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contenu-accueil {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px;
+}
+
+.contenu-accueil .trait-noir {
+  height: 200px;
+  background-color: #414143;
+  width: 2px;
+  margin-right: 80px;
+}
+
+.contenu-accueil .contenu-accueil-text .titre-accueil {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.contenu-accueil .contenu-accueil-text .bouton-site {
+  cursor: pointer;
+}
+
+.contenu-accueil .contenu-accueil-text .bouton-site {
+  width: 200px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  background-color: #649fba;
+  border-radius: 10px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.reservations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservations .titre-reservations {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .titre-contacts {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.contacts .ajout-offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts .ajout-offre .titre-personne {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contacts .ajout-offre .champs-formulaire {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  font-size: 18px;
+}
+
+.contacts .ajout-offre .champs-formulaire .file-avatar {
+  display: none;
+}
+
+.contacts .ajout-offre .champs-formulaire .label-image-default {
+  max-width: 350px;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.contacts .ajout-offre .champs-formulaire .avatar-default:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.contacts .ajout-offre .champs-formulaire .avatar-default {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+
+.contacts .ajout-offre .champs-formulaire .icon-fleche {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.contacts .ajout-offre .champs-formulaire label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contacts .ajout-offre .champs-formulaire .trait-bleu {
+  margin-right: 14px;
+  height: 25px;
+  width: 2px;
+  border-radius: 20px;
+  background-color: #649fba;
+}
+
+.contacts .ajout-offre .champs-formulaire .nom, .contacts .ajout-offre .champs-formulaire .fonction, .contacts .ajout-offre .champs-formulaire .telephone {
+  font-family: 'Architects Daughter', cursive;
+  width: 450px;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.formations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.formations .titre-professionelles {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.formations .label-image-default {
+  width: 550px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.formations .image-default:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.formations .icon-bouton-personnalise {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.formations .bouton-personnalise:hover {
+  cursor: pointer;
+}
+
+.formations .image-default {
+  width: 100%;
+  height: 100%;
+}
+
+.formations .file-avatar, .formations .file-doc {
+  display: none;
+}
+
+.offres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.offres .titre-offres {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.offres .ajout-offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offres .ajout-offre .titre-personne {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.offres .ajout-offre .champs-formulaire {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  font-size: 18px;
+}
+
+.offres .ajout-offre .champs-formulaire .icon-fleche {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.offres .ajout-offre .champs-formulaire label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.offres .ajout-offre .champs-formulaire .trait-bleu {
+  margin-right: 14px;
+  height: 25px;
+  width: 2px;
+  border-radius: 20px;
+  background-color: #649fba;
+}
+
+.offres .ajout-offre .champs-formulaire .nom {
+  font-family: 'Architects Daughter', cursive;
+  width: 450px;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.offres .ajout-offre .champs-formulaire .description {
+  height: 220px;
+  width: 450px;
+  border: 1px solid #f4f4f4;
+}
+
+.offres .ajout-offre .champs-formulaire .personne, .offres .ajout-offre .champs-formulaire .telephone {
+  font-family: 'Architects Daughter', cursive;
+  width: 450px;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.banniere {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  background-image: url("../images/cuisine-fond.png");
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  padding-top: 120px;
+  position: relative;
+  z-index: -100;
+}
+
+.banniere h1 {
+  font-size: 90px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.banniere h4 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banniere .trait-gris {
+  margin: auto;
+  height: 2px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #414143;
+}
+
+.poles-formations {
+  padding-top: 40px;
+}
+
+.poles-formations .toutes-les-formations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.poles-formations .box-shadow {
+  position: absolute;
+  margin-top: 22px;
+  z-index: -10;
+  width: 17%;
+  height: 350px;
+  background-color: #f4f4f4;
+}
+
+.poles-formations .titre-section-formations {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.poles-formations .formations-infos {
+  -webkit-box-shadow: -13px 16px 0px 1px #f4f4f4;
+          box-shadow: -13px 16px 0px 1px #f4f4f4;
+  height: 350px;
+  display: block;
+  width: 300px;
+  border: 2px solid #649fba;
+  background-color: white;
+  margin-left: 22px;
+}
+
+.poles-formations .formations-infos .titre-poles-formations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.poles-formations .trait-bleu {
+  width: 60px;
+  height: 2px;
+  margin-top: 28px;
+  background: #649fba;
+  margin-left: 25px;
+}
+
+.poles-formations .icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.poles-formations h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.poles-formations p {
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  position: relative;
+  bottom: 12px;
+  font-size: 15px;
+  font-family: 'Athiti', sans-serif;
+}
+
+.notre-role {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notre-role .contenu-notre-role {
+  margin-left: 130px;
+}
+
+.notre-role .contenu-notre-role .notre-role-titre {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.notre-role .contenu-notre-role .trait-bleu {
+  width: 80px;
+  height: 2px;
+  background-color: #649fba;
+}
+
+.notre-role .contenu-notre-role p {
+  font-family: 'Athiti', sans-serif;
+  text-align: justify;
+}
+
+.notre-role .photo-role {
+  position: relative;
+  left: 30px;
+  width: 400px;
+  height: 250px;
+  -webkit-box-shadow: -120px -120px 0px -100px #649fba;
+          box-shadow: -120px -120px 0px -100px #649fba;
+}
+
+.lycee-dampierre {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lycee-dampierre .contenu-notre-role {
+  margin-right: 130px;
+}
+
+.lycee-dampierre .contenu-notre-role .lycee-dampierre-button {
+  font-family: 'Athiti', sans-serif;
+  border: 2px solid #649fba;
+  font-size: 20px;
+  background: transparent;
+  color: #649fba;
+  padding: 10px 20px 10px 20px;
+}
+
+.lycee-dampierre .contenu-notre-role .notre-role-titre {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lycee-dampierre .contenu-notre-role .trait-bleu {
+  width: 80px;
+  height: 2px;
+  background-color: #649fba;
+}
+
+.lycee-dampierre .contenu-notre-role p {
+  font-family: 'Athiti', sans-serif;
+  text-align: justify;
+}
+
+.lycee-dampierre .photo-dampierre {
+  position: relative;
+  left: 30px;
+  width: 400px;
+  -webkit-box-shadow: 120px -120px 0px -100px #649fba;
+          box-shadow: 120px -120px 0px -100px #649fba;
+}
+
+.partenaires {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partenaires .logos-partenaires {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partenaires .logos-partenaires .logo-partenaire {
+  width: 35%;
+  padding: 28px;
+  margin: auto;
+}
+
+.partenaires .contenu-notre-role {
+  margin-left: 130px;
+}
+
+.partenaires .contenu-notre-role .notre-role-titre {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.partenaires .contenu-notre-role .trait-bleu {
+  width: 80px;
+  height: 2px;
+  background-color: #649fba;
+}
+
+.partenaires .contenu-notre-role p {
+  font-family: 'Athiti', sans-serif;
+  text-align: justify;
+}
+
+.partenaires .photo-role {
+  position: relative;
+  left: 30px;
+  width: 400px;
+  height: 250px;
+  -webkit-box-shadow: -120px -120px 0px -100px #649fba;
+          box-shadow: -120px -120px 0px -100px #649fba;
+}
+
+.email {
+  height: 200px;
+  width: 100%;
+  margin: 0;
+  background-image: url("../images/fond-mail.jpg");
+  background-size: cover;
+}
+
+.email .titre-email {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+.email .email-text {
+  border: 2px solid #f4f4f4;
+  width: 400px;
+  height: 40px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.email .email-button {
+  position: relative;
+  top: 2px;
+  font-family: 'Architects Daughter', cursive;
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #649fba;
+  border: none;
+  color: white;
+}
+
+.email .email-button {
+  width: 200px;
+  height: 42px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.email .icon-mail {
+  position: relative;
+  top: 20px;
+  width: 45px;
+  margin: 0px;
+  height: 45px;
+  margin-right: 30px;
+}
+
+.email .formulaire-email {
+  text-align: center;
+}
+
+.titre-conatct {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-pricipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-pricipal .image-contact-principal {
+  width: 650px;
+  height: 400px;
+}
+
+.contact-pricipal .trait-gris {
+  height: 2px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #414143;
+}
+
+.contact-pricipal .informations-contact {
+  position: relative;
+  top: 50px;
+  right: 50px;
+  width: 280px;
+  height: 280px;
+  background-color: #649fba;
+}
+
+.contact-pricipal .informations-contact .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-pricipal .informations-contact .trait-blanc {
+  height: 150px;
+  width: 1px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-pricipal .informations-contact .titre-contact-principal {
+  margin-left: 25px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-pricipal .informations-contact .information-contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-pricipal .informations-contact .information-contact .information-contact-titre {
+  font-family: 'Athiti', sans-serif;
+  color: white;
+  margin: 0px;
+  padding-left: 15px;
+}
+
+.contact-pricipal .informations-contact .information-contact .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .photo-contact {
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: -120px -120px 0px -100px #649fba;
+          box-shadow: -120px -120px 0px -100px #649fba;
+}
+
+.contact .infos-contact .contact-fonction {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1500;
+}
+
+.contact .infos-contact .trait-bleu-contact {
+  height: 40px;
+  width: 2px;
+  background-color: #649fba;
+  margin-right: 30px;
+}
+
+.contact .infos-contact .partie-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .infos-contact .partie-contact .nom-contact {
+  font-size: 30px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact .infos-contact .infos-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  padding-top: 80px;
+}
+
+.contact .infos-contact .infos-contact .icon-contact {
+  width: 28px;
+  height: 28px;
+}
+
+.contact .infos-contact .infos-contact .contact-tel {
+  margin: 0px;
+  font-family: 'Architects Daughter', cursive;
+  margin-left: 15px;
+}
+
+.trait-gris {
+  width: 80%;
+  height: 2px;
+  background-color: #414143;
+  margin: 80px auto 80px auto;
+}
+
+.formations .titre-offres {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.formations .ajout-offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formations .ajout-offre .titre-personne {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.formations .ajout-offre .champs-formulaire {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  font-size: 18px;
+}
+
+.formations .ajout-offre .champs-formulaire .icon-fleche {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.formations .ajout-offre .champs-formulaire label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.formations .ajout-offre .champs-formulaire .trait-bleu {
+  margin-right: 14px;
+  height: 25px;
+  width: 2px;
+  border-radius: 20px;
+  background-color: #649fba;
+}
+
+.formations .ajout-offre .champs-formulaire .nom {
+  font-family: 'Architects Daughter', cursive;
+  width: 450px;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
