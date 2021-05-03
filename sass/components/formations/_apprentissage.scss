@@ -1,0 +1,57 @@
+
+
+.titre-apprentissage{
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.apprentissage{
+
+.block-titre{
+    display: flex;
+    padding-bottom: 30px;
+
+    .icon-titre{
+        padding-top: 18px;
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+    }
+
+    .titre-genre-formation{
+        padding: 8px 30px 8px 30px;
+        border: 1px solid #649fba;
+        font-family: 'Roboto', sans-serif; 
+        box-shadow: -5px -5px 0px 0px #f4f4f4;
+    }
+}
+
+}
+.formations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+.formation{
+    width: 30%;
+    padding-top: 20px;
+    
+    .image-formation{
+        width: 400px;
+    }
+    .trait-bleu-horizontal{
+        background-color: #649fba;
+        margin-top: 10px;
+        height: 2px;
+        width: 40px;
+    }
+    h4{
+        max-width: 500px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif; 
+    }
+}
+
+}

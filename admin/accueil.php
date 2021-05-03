@@ -51,3 +51,9 @@ require('../vues/sidebar_admin.php');
 
 
 ?>
+
+<?php
+
+include('../vues/scripts.php');
+
+?>

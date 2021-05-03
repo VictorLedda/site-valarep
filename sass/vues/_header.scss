@@ -23,15 +23,56 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-
-            a{
-                color: black;
-                  li{
+        a{
+            li{
+            color: black;
             font-size: 15px;
             font-family: 'Architects Daughter', cursive;
+            text-align: center;
+        }
+    }
+     .formations-header{
+         text-align: center;
+         .block-menu-formations:hover{
+             cursor: pointer;
+             opacity: 1;
+             animation-name: header-menu;
+             animation-duration: 1s;
+         }
+         .block-menu-formations{
+            position: relative;
+            bottom: 40px;
+            opacity: 0;
+            .menu-formations-header{
+                position: relative;
+                bottom: 8px;
+                background-color: #f4f4f4;
+                height: 100px;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                a{
+                    li{
+                    color: black;
+                    font-size: 15px;
+                    font-family: 'Architects Daughter', cursive;
+                    text-align: center;
                 }
             }
+            }
         }
+        
+               
+                  li{
+                    color: black;
+            font-size: 15px;
+            font-family: 'Architects Daughter', cursive;
+                
+            }
+        }
+    }
 }
 
 
@@ -53,3 +94,23 @@ h3{
 
 
 }
+
+
+.triangle-menu{
+    margin: 0px;
+    width: 65px;
+}
+
+
+@keyframes header-menu {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+     opacity: 1;
+     transform: translateY(0px);
+    }
+  }
+

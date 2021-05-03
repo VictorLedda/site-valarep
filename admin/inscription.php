@@ -42,6 +42,10 @@ require('../vues/head_admin.php');
 </body>
 </html>
 
+<?php
+include('../vues/scripts.php');
+?>
+
 
 
 

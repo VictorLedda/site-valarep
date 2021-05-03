@@ -69,5 +69,5 @@ if(!isset($_SESSION['id'])){
 <?php
 
 }
-
+include('../vues/scripts.php');
 ?>

@@ -1,10 +1,15 @@
 <?php
+session_start();
+if(isset($_SESSION['id'])){
+
 
 require('../../vues/head_admin.php');
 
 ?>
 <header class='page-ajout'>
-    
+<label class='button-ajouter' for='contact'>
+  <span>Publier</span>
+</label>
  
     
     </header>
@@ -18,10 +23,16 @@ require('../../vues/sidebar_admin.php');
 
 <div class='titre-center'>
 
-<h2 class='titre-contacts'>Ajout d'un contact</h2>
 
+<?php
+
+require('../../vues/errors/ajout-contact.php');
+
+?>
 <form  class='ajout-offre' enctype= 'multipart/form-data' method="POST" action='/valarep/admin/index.php?action=ajout-contact'>
-    
+
+<h2 class='titre-contacts'>Ajout d'un contact</h2>
+<div class="container-admin">
     <div class='champs-formulaire'>
   
 <label><div class='trait-bleu'></div>Avatar du contact</label>
@@ -53,9 +64,11 @@ require('../../vues/sidebar_admin.php');
   <input class='telephone' name='telephone' type='text' placeholder="Numéro de téléphone" />
 </div>
 
+
+</div>
     
+    <input class='ajouter' name='publier' type='submit' value='publier' id='contact'/>
     
-    <input class='ajouter' name='publier' type='submit' value='publier'/>
     </form>
 
 
@@ -64,3 +77,14 @@ require('../../vues/sidebar_admin.php');
 </div>
 
 </section>
+
+
+<?php
+
+}else{
+  header("Location: /valarep/admin");
+}
+
+include('../../vues/scripts.php');
+
+?>

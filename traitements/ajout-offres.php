@@ -1,16 +1,20 @@
 <?php
 
-require("../config/bd.php");
-
-$contenu = htmlspecialchars($_GET['contenu']);
-$titre = htmlspecialchars($_GET['titre']);
-$image = htmlspecialchars($_GET['image']);
+require("../config/bdd.php");
+if (isset($_POST['publier'])){
 
 
-$req = $pdo->prepare("INSERT INTO offres(titre, contenu, image) VALUES( ?, ?, ?)");
-$req->execute(array($titre, $contenu, $image));
+$titre = htmlspecialchars($_POST['titre']);
+$contenu = htmlspecialchars($_POST['contenu']);
+$genre = htmlspecialchars($_POST['genre']);
+$personne = htmlspecialchars($_POST['personne']);
+$telephone = htmlspecialchars($_POST['telephone']);
 
-header("Location: /admin/ajout-articles.php");
 
+$req = $pdo->prepare("INSERT INTO offres(nom, description, genre, personne, telephone) VALUES( ?, ?, ?, ?, ?)");
+$req->execute(array($titre, $contenu, $genre, $personne, $telephone));
 
+header("Location: /valarep/admin/offres/ajout-offre.php");
+
+}
 ?>

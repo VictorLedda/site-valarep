@@ -1,0 +1,29 @@
+input[type=button]:hover{
+    transition-duration: 1s;
+        background-color: #316379;
+        cursor: pointer;
+}
+
+.button-ajouter:hover{
+    transition-duration: 1s;
+    background-color: #316379;
+    cursor: pointer;
+
+
+}
+.telecharger-documentation:hover{
+    cursor: pointer;
+    transition-duration: 0.8s;
+    color: white;
+    background-color: #649fba;
+}
+.telecharger-documentation{
+    width: 180px;
+    height: 40px;
+    background: none;
+    border: 1px solid #649fba;
+    font-size: 20px;
+    color: #649fba;
+    font-family: 'Architects Daughter', cursive;
+}
+

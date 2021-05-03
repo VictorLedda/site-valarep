@@ -1,31 +1,81 @@
+
+
+
+<div>
 <div class='sidebar'>
 <a href="/valarep/admin/index.php"><div class='onlets-sidebar'>
+
+<div class='sidebar-part'>
 <img class='icon' src='/valarep/images/icon-home-blanc.png'/>
 <h4 class='nom-onglets'>Accueil</h4>
+</div>
+<img class='fleche' src='/valarep/images/fleche.png'/>
 </div></a>
 
 
-<a href="/valarep/admin/formations/professionels.php"><div class='onlets-sidebar'>
+<div class='onlets-sidebar'>
+
+<div class='sidebar-part'>
 <img class='icon' src='/valarep/images/formation-blanc.png'/>
 <h4 class='nom-onglets'>Formations</h4>
-</div></a>
+</div>
+<img class='fleche fleche-formations' src='/valarep/images/fleche.png'/>
+</div>
+<div class="menu-sidebar">
+<div class="menu-formations displayNone">
+<a href='/valarep/admin/formations/toutes-formations.php'><div class="menu-formations-toutes menu-onglet"><span>Toutes</span></div></a>
+<a href='/valarep/admin/formations/professionels.php'><div class="menu-formations-profesionelles menu-onglet"><span>Ajout en apprentissage</span></div></a>
+<a href='/valarep/admin/formations/apprentissage.php'><div class="menu-formations-arep menu-onglet"><span>Ajout en AREP</span></div></a>
+</div>
+</div>
 
 
-<a href="/valarep/admin/contact/ajout-contact.php"><div class='onlets-sidebar'>
+<div class='onlets-sidebar'>
+<div class='sidebar-part'>
 <img class='icon' src='/valarep/images//contact-blanc.png'/>
 <h4 class='nom-onglets'>Contact</h4>
-</div></a>
-
-
-<a href="/valarep/admin/offres/ajout-offre.php"><div class='onlets-sidebar'>
-<img class='icon' src='/valarep/images//icon-offre-blanc.png'/>
-<h4 class='nom-onglets'>Offres d'emplois</h4>
-</div></a>
-
-<a href="/valarep/admin/reservations.php"><div class='onlets-sidebar'>
-<img class='icon' src='/valarep/images/calendrier-blanc.png'/>
-<h4 class='nom-onglets'>Réservations</h4>
-</div></a>
+</div>
+<img class='fleche fleche-contacts' src='/valarep/images/fleche.png'/>
+</div>
+<div class="menu-sidebar">
+<div class="menu-contacts displayNone">
+<a href='/valarep/admin/contact/tous-les-contacts.php'><div class="menu-contacts-tous menu-onglet"><span>Tous</span></div></a>
+<a href='/valarep/admin/formations/ajout-contact.php'><div class="menu-ajout-contact menu-onglet"><span>Ajout contact</span></div></a>
 
 </div>
+</div>
+
+
+<div class='onlets-sidebar'>
+<div class='sidebar-part'>
+<img class='icon ' src='/valarep/images/icon-offre-blanc.png'/>
+<h4 class='nom-onglets'>Offres d'emplois</h4>
+</div>
+<img class='fleche fleche-offres' src='/valarep/images/fleche.png'/>
+</div>
+<div class="menu-sidebar">
+<div class="menu-offres displayNone">
+<a href='/valarep/admin/offres/toutes-les-offres.php'><div class="menu-offres-toutes menu-onglet"><span>Toutes</span></div></a>
+<a href='/valarep/admin/offres/ajout-offre.php'><div class="menu-ajout-offres menu-onglet"><span>Ajout offre</span></div></a>
+</div>
+</div>
+
+<a href="/valarep/admin/reservations.php"><div class='onlets-sidebar'>
+<div class='sidebar-part'>
+<img class='icon' src='/valarep/images/calendrier-blanc.png'/>
+<h4 class='nom-onglets'>Réservations</h4>
+</div>
+<img class='fleche' src='/valarep/images/fleche.png'/>
+
+</div></a>
+
+
 <div class="div-vide"></div>
+</div>
+
+
+
+
+
+
+</div>

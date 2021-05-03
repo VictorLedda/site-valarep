@@ -1,4 +1,6 @@
 <?php
+session_start();
+if(isset($_SESSION['id'])){
 
 require('../vues/head_admin.php');
 
@@ -15,3 +17,11 @@ require('../vues/sidebar_admin.php');
 
 
 </section>
+
+<?php
+
+}else{
+  header("Location: /valarep/admin");
+}
+include('../vues/scripts.php');
+?>

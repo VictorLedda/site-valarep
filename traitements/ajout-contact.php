@@ -22,7 +22,7 @@ $idContact = $pdo->prepare("SELECT * FROM contacts WHERE nom = ? AND fonction = 
     $id = $idContact->fetch();
 
 if(isset($avatar) AND !empty($avatar)){
-    $taillemax = 2097152;
+    $taillemax = 10097152;
     $extensionsValides = array('jpg', 'jpeg', 'gif', 'png');
     if($_FILES['avatar']['size'] <= $taillemax){
         
@@ -62,5 +62,15 @@ if(isset($avatar) AND !empty($avatar)){
 header("Location: /valarep/admin/contact/ajout-contact.php");
 
 }
+
+if(isset($msg)){
+    $_SESSION['error_ajout_contact'] = $msg;
+    header("Location: /valarep/admin/contact/ajout-contact.php");
+    
+   
+    
+   
+      
+   }
 
 ?>

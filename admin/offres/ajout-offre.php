@@ -1,14 +1,15 @@
 <?php
+session_start();
+if(isset($_SESSION['id'])){
 
 require('../../vues/head_admin.php');
 
 ?>
 <header class='page-ajout'>
     
-    <form method="POST" action='index.php?action=ajout-offre'>
-    <input class='ajouter' name='publier' type='submit' value='publier'/>
-    
-    </form>
+<label class='button-ajouter' for='offre'>
+  <span>Publier</span>
+</label>
     
     </header>
 <section class='offres'>
@@ -20,10 +21,19 @@ require('../../vues/sidebar_admin.php');
 
 
 <div class='titre-center'>
+<?php
+
+require('../../vues/errors/ajout-offre.php');
+
+?>
+
+<form  class='ajout-offre' enctype= 'multipart/form-data' method="POST" action='/valarep/admin/index.php?action=ajout-offres'>
 
 <h2 class='titre-offres'>Ajouter une offre</h2>
 
-<form class='ajout-offre' action ="index.php?action=ajout-offres" type='POST' enctype= 'multipart/form-data'>
+<div class="container-admin">
+
+
 <div class='champs-formulaire'>
 <label><div class='trait-bleu'></div>Nom de l'offre</label>
   <input class='nom' name='titre' type='text' placeholder="Titre de l'article" />
@@ -40,11 +50,11 @@ require('../../vues/sidebar_admin.php');
 
 <div class='champs-formulaire'>
 <label><div class='trait-bleu'></div>Type d'offres</label>
- <select class='select'>
-  <option>Informatique</option>
-  <option>Industrie</option>
-  <option>Restauration</option>
-  <option>Batiments</option>
+ <select name='genre' class='select'>
+  <option value='informatique'>Informatique</option>
+  <option value='industrie'>Industrie</option>
+  <option value='restauration'>Restauration</option>
+  <option value='batiments'>Batiments</option>
  </select>
 </div>
 <div class='trait-gris-separateur'></div>
@@ -64,8 +74,8 @@ require('../../vues/sidebar_admin.php');
 
 
  
- 
- 
+</div>
+<input class='ajouter' name='publier' type='submit' value='publier' id='offre'/>
   </form>  
 
 
@@ -74,3 +84,11 @@ require('../../vues/sidebar_admin.php');
 </div>
 
 </section>
+
+<?php
+
+}else{
+  header("Location: /valarep/admin");
+}
+include('../../vues/scripts.php');
+?>
