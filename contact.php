@@ -3,6 +3,7 @@
 
 require_once('./vues/header.php');
 
+$reqcontact = $pdo->query("SELECT * FROM contacts");
 
 ?>
 
@@ -41,21 +42,27 @@ require_once('./vues/header.php');
 
 </section>
 
-<div class='trait-gris'></div>
+
 
 
 <section class='autres-contacts container'>
-<div class='contact '>
-    <img class='photo-contact' src='images/photo1.png'/>
+
+<?php
+while($c=$reqcontact->fetch()){
+
+    ?>
+    <div class='trait-gris'></div>
+<div class='contact <?php if($c['id'] % 2 !== 0){ echo 'reverse';}?> '>
+    <img class='photo-contact' src='images/<?= $c['avatar']; ?>'/>
     <div class='infos-contact'>
-        <h2 class='contact-fonction'>Direction</h2>
+        <h2 class='contact-fonction'><?= $c['fonction']; ?></h2>
         <div class='partie-contact'>
         <div class='trait-bleu-contact'></div>
-        <h3 class='nom-contact'>M. Emmanuel David</h3>
+        <h3 class='nom-contact'><?= $c['nom'] ?></h3>
         </div>
         <div class='infos-contact'> 
         <img class='icon-contact' src='images/mail-bleu.png'/>
-        <h4 class='contact-tel'>valarep@valarep.fr</h4>
+        <h4 class='contact-tel'><?= $c['telephone']; ?></h4>
         </div>
 
         </div>
@@ -63,86 +70,11 @@ require_once('./vues/header.php');
 
 </div>
 
-<div class='trait-gris'></div>
+<?php
+}
 
-<div class='contact reverse'>
-    <img class='photo-contact' src='images/photo2.png'/>
-    <div class='infos-contact'>
-        <h2 class='contact-fonction'>Direction</h2>
-        <div class='partie-contact'>
-        <div class='trait-bleu-contact'></div>
-        <h3 class='nom-contact'>M. Emmanuel David</h3>
-        </div>
-        <div class='infos-contact'> 
-        <img class='icon-contact' src='images/mail-bleu.png'/>
-        <h4 class='contact-tel'>valarep@valarep.fr</h4>
-        </div>
+?>
 
-        </div>
-    </div>
-
-</div>
-
-
-<div class='trait-gris'></div>
-
-<div class='contact '>
-    <img class='photo-contact' src='images/photo3.png'/>
-    <div class='infos-contact'>
-        <h2 class='contact-fonction'>Direction</h2>
-        <div class='partie-contact'>
-        <div class='trait-bleu-contact'></div>
-        <h3 class='nom-contact'>M. Emmanuel David</h3>
-        </div>
-        <div class='infos-contact'> 
-        <img class='icon-contact' src='images/mail-bleu.png'/>
-        <h4 class='contact-tel'>valarep@valarep.fr</h4>
-        </div>
-
-        </div>
-    </div>
-
-</div>
-
-<div class='trait-gris'></div>
-
-<div class='contact reverse'>
-    <img class='photo-contact' src='images/photo4.png'/>
-    <div class='infos-contact'>
-        <h2 class='contact-fonction'>Direction</h2>
-        <div class='partie-contact'>
-        <div class='trait-bleu-contact'></div>
-        <h3 class='nom-contact'>M. Emmanuel David</h3>
-        </div>
-        <div class='infos-contact'> 
-        <img class='icon-contact' src='images/mail-bleu.png'/>
-        <h4 class='contact-tel'>valarep@valarep.fr</h4>
-        </div>
-
-        </div>
-    </div>
-
-</div>
-
-<div class='trait-gris'></div>
-
-<div class='contact '>
-    <img class='photo-contact' src='images/photo1.png'/>
-    <div class='infos-contact'>
-        <h2 class='contact-fonction'>Direction</h2>
-        <div class='partie-contact'>
-        <div class='trait-bleu-contact'></div>
-        <h3 class='nom-contact'>M. Emmanuel David</h3>
-        </div>
-        <div class='infos-contact'> 
-        <img class='icon-contact' src='images/mail-bleu.png'/>
-        <h4 class='contact-tel'>valarep@valarep.fr</h4>
-        </div>
-
-        </div>
-    </div>
-
-</div>
 
 </section>
 

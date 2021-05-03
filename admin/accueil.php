@@ -10,7 +10,6 @@ require('../vues/head_admin.php');
 if(isset($_SESSION['id'])){
     ?>
 <header class='page-ajout'>
-    
     <form method="POST" action='index.php?action=deconnexion'>
     <input class='bouton-deconnexion' name='publier' type='submit' value='deconnexion'/>
     
