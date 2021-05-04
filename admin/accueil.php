@@ -17,7 +17,7 @@ if(isset($_SESSION['id'])){
     
     </header>
 
-<section class='formations'>
+<section>
 
 
 <?php

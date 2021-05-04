@@ -9,7 +9,8 @@ $listeDesActions = array(
     "ajout-offres" => "../traitements/ajout-offres.php",
     "professionelles" => "../traitements/ajout-formations-professionelles.php",
     "ajout-contact" => "../traitements/ajout-contact.php",
-    "arep" => "../traitements/ajout-formations-arep.php"
+    "arep" => "../traitements/ajout-formations-arep.php",
+    "supp-contact" => "../../traitements/supprimer-contact.php"
   
     
 );

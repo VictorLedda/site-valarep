@@ -45,7 +45,7 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 </div>
 </div>
 </div>
-       <a href='/valarep/index.php'> <li>Chateau fortier</li></a>
+       <a href='/valarep/chateau-fortier/'> <li>Chateau fortier</li></a>
        <a href='/valarep/contact.php'> <li>Nous contacter</li></a>
        <a href='https://valarep.fr/ent-valarep/'> <li>ENT</li></a>
        <a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'> <li>GED</li></a>

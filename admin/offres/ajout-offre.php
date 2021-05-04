@@ -12,12 +12,13 @@ require('../../vues/head_admin.php');
 </label>
     
     </header>
-<section class='offres'>
-<?php
+    <?php
 
 require('../../vues/sidebar_admin.php');
 
 ?>
+<section class='offres'>
+
 
 
 <div class='titre-center'>

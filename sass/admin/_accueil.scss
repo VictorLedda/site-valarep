@@ -1,19 +1,8 @@
 .displayNone{
     display: none;
-    
-    animation-name: error;
+
 }
 
-@keyframes error {
-    0% {
-      opacity: 1;
-    }
-  
-    100% {
-     opacity: 0;
-     
-    }
-  }
 
 .titre-center{
     text-align: center;
@@ -206,8 +195,8 @@ justify-content:flex-end;
 .contenu-accueil{
     padding-top: 50px;
     display: flex;
-    margin-left: 150px;
-
+    
+padding-left: 400px;
    
   .trait-noir{
       height: 200px;

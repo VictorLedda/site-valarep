@@ -366,26 +366,6 @@ body {
 
 .displayNone {
   display: none;
-  -webkit-animation-name: error;
-          animation-name: error;
-}
-
-@-webkit-keyframes error {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes error {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .titre-center {
@@ -609,7 +589,7 @@ header .bouton-deconnexion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 150px;
+  padding-left: 400px;
 }
 
 .contenu-accueil .trait-noir {
@@ -771,6 +751,214 @@ header .bouton-deconnexion {
   height: 40px;
   font-size: 16px;
   margin-bottom: 60px;
+}
+
+.titre-tous-les-contacts {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.tous-les-contacts {
+  padding-left: 300px;
+}
+
+.tous-les-contacts .contact-editer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tous-les-contacts .contact-editer .avatar-editer {
+  width: 250px;
+  height: 250px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos {
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-coordonnees {
+  padding-bottom: 50px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-coordonnees span {
+  padding-left: 20px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-coordonnees .contact-coordonnees-haut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .icon-corbeille {
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .icon-corbeille:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-changer-image {
+  background-color: #649fba;
+  color: white;
+  border: 1px solid #649fba;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 8px 20px 8px 20px;
+}
+
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-changer-image:hover {
+  background-color: white;
+  color: #649fba;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.titres-toutes-arep {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+  font-size: 25px;
+  color: black;
+  padding-left: 300px;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.titres-toutes-apprentissage {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+  font-size: 25px;
+  padding-top: 220px;
+  color: black;
+  padding-left: 300px;
+}
+
+.icon-editer:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.icon-editer {
+  width: 30px;
+  height: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.trait-edition {
+  width: 80%;
+  height: 1px;
+  background-color: #414143;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.icon-corbeille {
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+}
+
+.icon-corbeille:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.toutes-dormations-editer {
+  margin: auto;
+  padding-left: 300px;
+}
+
+.toutes-dormations-editer .formation-editer {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toutes-dormations-editer .formation-editer .image-formation {
+  width: 300px;
+}
+
+.toutes-dormations-editer .formation-editer .formation-editer-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toutes-dormations-editer .formation-editer h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.toutes-dormations-editer .formation-editer .buttons-editer .icon-button {
+  height: 25px;
+  width: 25px;
+}
+
+.toutes-dormations-editer .formation-editer .buttons-editer .new-image {
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px 10px 25px;
+  background-color: #649fba;
+  border: 1px solid #649fba;
+}
+
+.toutes-dormations-editer .formation-editer .buttons-editer .new-image:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+  background-color: white;
+  color: #649fba;
+  border: 1px solid #649fba;
+}
+
+.toutes-dormations-editer .formation-editer .buttons-editer .new-doc {
+  font-size: 20px;
+  border: 1px solid #649fba;
+  border-radius: 8px;
+  padding: 10px 25px 10px 25px;
+  background-color: white;
+}
+
+.toutes-dormations-editer .formation-editer .buttons-editer .new-doc:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+  background-color: #649fba;
+  color: white;
+  border: 1px solid #649fba;
 }
 
 .formations {
@@ -1460,6 +1648,108 @@ header .bouton-deconnexion {
   bottom: 20px;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
+}
+
+.titre-chateau {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.presentation-chateau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.presentation-chateau .video {
+  -webkit-box-shadow: -120px 120px 0px -60px #649fba;
+          box-shadow: -120px 120px 0px -60px #649fba;
+}
+
+.presentation-chateau .chateau-text {
+  padding-left: 200px;
+}
+
+.presentation-chateau .chateau-text .sous-titre-chateau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presentation-chateau .chateau-text .sous-titre-chateau h2 {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom: 10px;
+}
+
+.presentation-chateau .chateau-text .sous-titre-chateau .trait-bleu-vertical {
+  height: 40px;
+  width: 2px;
+  margin-right: 20px;
+  background-color: #649fba;
+}
+
+.presentation-chateau .chateau-text p {
+  text-align: justify;
+  max-width: 1000px;
+  font-family: 'Athiti', sans-serif;
+}
+
+.presentation-recettes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.presentation-recettes .image-recettes {
+  -webkit-box-shadow: 130px -130px 0px -100px #649fba;
+          box-shadow: 130px -130px 0px -100px #649fba;
+  width: 450px;
+  padding-left: 200px;
+}
+
+.presentation-recettes .chateau-text .sous-titre-chateau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presentation-recettes .chateau-text .sous-titre-chateau h2 {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom: 10px;
+}
+
+.presentation-recettes .chateau-text .sous-titre-chateau .trait-bleu-vertical {
+  height: 40px;
+  width: 2px;
+  margin-right: 20px;
+  background-color: #649fba;
+}
+
+.presentation-recettes .chateau-text p {
+  text-align: justify;
+  max-width: 800px;
+  font-family: 'Athiti', sans-serif;
+}
+
+.titre-images-chateau {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .titre-apprentissage {

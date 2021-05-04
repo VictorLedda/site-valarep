@@ -1,0 +1,84 @@
+.titre-chateau{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.presentation-chateau{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
+.video{
+    box-shadow: -120px 120px 0px -60px #649fba;
+}
+    .chateau-text{
+        padding-left: 200px;
+    .sous-titre-chateau{
+display: flex;
+h2{
+    font-family: 'Roboto', sans-serif; 
+    position: relative;
+    bottom: 10px;
+}
+        .trait-bleu-vertical{
+            height: 40px;
+            width: 2px;
+            margin-right: 20px;
+            background-color: #649fba;
+        }
+    }
+    p{
+        text-align: justify;
+       max-width: 1000px;
+        font-family: 'Athiti', sans-serif;
+    }
+}
+}
+
+.presentation-recettes{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
+.image-recettes{
+    box-shadow: 130px -130px 0px -100px #649fba;
+    width: 450px;
+    padding-left: 200px;
+}
+    .chateau-text{
+        
+    .sous-titre-chateau{
+display: flex;
+h2{
+    font-family: 'Roboto', sans-serif; 
+    position: relative;
+    bottom: 10px;
+}
+        .trait-bleu-vertical{
+            height: 40px;
+            width: 2px;
+            margin-right: 20px;
+            background-color: #649fba;
+        }
+    }
+    p{
+        text-align: justify;
+       max-width: 800px;
+        font-family: 'Athiti', sans-serif;
+    }
+}
+}
+
+.titre-images-chateau{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+
