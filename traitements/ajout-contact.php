@@ -30,7 +30,7 @@ if(isset($avatar) AND !empty($avatar)){
         if(in_array($extensionUpload, $extensionsValides)){
             
 
-            $chemin = "../images_uploads/avatar".$id['id'] .'.'.$extensionUpload ;
+            $chemin = "../images_uploads/avatars_contacts/avatar".$id['id'] .'.'.$extensionUpload ;
             $resultat = move_uploaded_file($_FILES['avatar']['tmp_name'], $chemin);
             if($resultat){
                 

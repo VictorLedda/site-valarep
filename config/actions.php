@@ -10,7 +10,8 @@ $listeDesActions = array(
     "professionelles" => "../traitements/ajout-formations-professionelles.php",
     "ajout-contact" => "../traitements/ajout-contact.php",
     "arep" => "../traitements/ajout-formations-arep.php",
-    "supp-contact" => "../../traitements/supprimer-contact.php"
-  
+    "supp-contact" => "../traitements/supprimer-contact.php",
+    "supp-formations" => "../traitements/supprimer-formation.php",
+    "editer-contact" => "../traitements/editer-contact.php"
     
 );

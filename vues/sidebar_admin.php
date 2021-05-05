@@ -40,7 +40,7 @@
 <div class="menu-sidebar">
 <div class="menu-contacts displayNone">
 <a href='/valarep/admin/contact/tous-les-contacts.php'><div class="menu-contacts-tous menu-onglet"><span>Tous</span></div></a>
-<a href='/valarep/admin/formations/ajout-contact.php'><div class="menu-ajout-contact menu-onglet"><span>Ajout contact</span></div></a>
+<a href='/valarep/admin/contact/ajout-contact.php'><div class="menu-ajout-contact menu-onglet"><span>Ajout contact</span></div></a>
 
 </div>
 </div>

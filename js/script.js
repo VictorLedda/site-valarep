@@ -48,6 +48,24 @@ contact_fleche.addEventListener('click', function(){
         menu_offres.classList.add('displayNone')
      }
  })
+ 
 
+ let editer_icon = document.querySelectorAll('.editer');
+ let input_modif = document.querySelectorAll('.input-modif')
+ let input_non_modif = document.querySelectorAll('.input-non-modif')
+ 
 
+for (let i = 0; i < 50; i++){
+ editer_icon[i].addEventListener('click', function(){
+     console.log('test')
+    if(input_modif[i].classList[2] == "displayNone"){
 
+    input_modif[i].classList.remove('displayNone')
+    input_non_modif[i].classList.add('displayNone')
+    }else{
+        input_modif[i].classList.add('displayNone')
+        input_non_modif[i].classList.remove('displayNone')
+    }
+ })
+
+}

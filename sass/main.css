@@ -364,6 +364,14 @@ body {
   margin: 0px;
 }
 
+.bouton-editer {
+  position: absolute;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+}
+
 .displayNone {
   display: none;
 }
@@ -788,7 +796,7 @@ header .bouton-deconnexion {
   padding-bottom: 50px;
 }
 
-.tous-les-contacts .contact-editer .contact-editer-infos .contact-coordonnees span {
+.tous-les-contacts .contact-editer .contact-editer-infos .contact-coordonnees .span-coordonees {
   padding-left: 20px;
 }
 
@@ -802,17 +810,12 @@ header .bouton-deconnexion {
 }
 
 .tous-les-contacts .contact-editer .contact-editer-infos .icon-corbeille {
+  font-family: 'Roboto', sans-serif;
   width: 30px;
   height: 30px;
   padding-top: 20px;
-}
-
-.tous-les-contacts .contact-editer .contact-editer-infos .icon-corbeille:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  cursor: pointer;
+  position: relative;
+  top: 10px;
 }
 
 .tous-les-contacts .contact-editer .contact-editer-infos .contact-changer-image {
@@ -830,6 +833,48 @@ header .bouton-deconnexion {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   cursor: pointer;
+}
+
+.bouton-supprimer {
+  display: none;
+}
+
+.input-modif {
+  position: relative;
+  top: 8px;
+}
+
+.label-corbeille {
+  font-family: 'Roboto', sans-serif;
+  color: #ec5454;
+  cursor: pointer;
+  border: 1px solid #ec5454;
+  border-radius: 8px;
+  padding: 10px 30px 10px 30px;
+}
+
+.label-corbeille:hover {
+  background-color: #ec5454;
+  color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.new-avatar-contact {
+  display: none;
+}
+
+.modifier {
+  margin-left: 500px;
+}
+
+.new-photo-formation, .new-photo-doc {
+  display: none;
+}
+
+.new-photo-formation {
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .titres-toutes-arep {
@@ -908,6 +953,7 @@ header .bouton-deconnexion {
 
 .toutes-dormations-editer .formation-editer .image-formation {
   width: 300px;
+  height: 200px;
 }
 
 .toutes-dormations-editer .formation-editer .formation-editer-titre {
@@ -959,6 +1005,33 @@ header .bouton-deconnexion {
   background-color: #649fba;
   color: white;
   border: 1px solid #649fba;
+}
+
+.label-corbeille-formations {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: 50px;
+  color: #ec5454;
+  cursor: pointer;
+  border: 1px solid #ec5454;
+  border-radius: 8px;
+  padding: 10px 30px 10px 30px;
+}
+
+.label-corbeille-formations:hover {
+  background-color: #ec5454;
+  color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.icon-corbeille-formations {
+  font-family: 'Roboto', sans-serif;
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+  position: relative;
+  top: 60px;
 }
 
 .formations {
@@ -1913,5 +1986,32 @@ input[type=button]:hover {
   font-size: 20px;
   color: #649fba;
   font-family: 'Architects Daughter', cursive;
+}
+
+.update {
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 7px;
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  background: #649fba;
+  border: 1px solid #649fba;
+  font-size: 20px;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.update:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #649fba;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.input-mettre-a-jour {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

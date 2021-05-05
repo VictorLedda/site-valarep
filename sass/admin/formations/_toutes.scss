@@ -1,3 +1,14 @@
+.new-photo-formation, .new-photo-doc{
+    display: none;
+}
+
+
+.new-photo-formation{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
 .titres-toutes-arep{
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -58,6 +69,7 @@ padding-left: 300px;
         justify-content: space-between;
         .image-formation{
             width: 300px;
+            height: 200px;
         }
 
         .formation-editer-titre{
@@ -104,4 +116,31 @@ padding-left: 300px;
 }
     }
 }
+}
+
+.label-corbeille-formations{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 50px;
+    color: #ec5454;
+ cursor: pointer;
+ border: 1px solid #ec5454;
+ border-radius: 8px;
+ padding: 10px 30px 10px 30px;
+}
+
+.label-corbeille-formations:hover{
+    background-color: #ec5454;
+    color: white;
+    transition-duration: 1s;
+}
+
+.icon-corbeille-formations{
+    font-family: 'Roboto', sans-serif;
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    position: relative;
+    top: 60px;
+
 }

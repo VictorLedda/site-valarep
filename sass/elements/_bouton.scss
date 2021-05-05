@@ -27,3 +27,33 @@ input[type=button]:hover{
     font-family: 'Architects Daughter', cursive;
 }
 
+.update{
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 7px;
+   text-align: center;
+    width: 180px;
+    height: 40px;
+    background: #649fba;
+    border: 1px solid #649fba;
+    font-size: 20px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+
+.update:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #649fba;
+    transition-duration: 1s;
+   
+
+}
+
+.input-mettre-a-jour{
+    display: none;
+}
+
