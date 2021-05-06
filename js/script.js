@@ -69,3 +69,25 @@ for (let i = 0; i < 50; i++){
  })
 
 }
+
+
+let editer_icon_formations = document.querySelectorAll('.editer-formations');
+let input_modif_formations = document.querySelectorAll('.input-modif-formations')
+let input_non_modif_formations = document.querySelectorAll('.input-non-modif-formations')
+
+
+for (let i = 0; i < 50; i++){
+editer_icon_formations[i].addEventListener('click', function(){
+    console.log('test')
+   if(input_modif_formations[i].classList[2] == "displayNone"){
+
+   input_modif_formations[i].classList.remove('displayNone')
+   input_non_modif_formations[i].classList.add('displayNone')
+   }else{
+       input_modif_formations[i].classList.add('displayNone')
+       input_non_modif_formations[i].classList.remove('displayNone')
+   }
+})
+
+}
+

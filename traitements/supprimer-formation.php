@@ -10,8 +10,9 @@ $deleteContenu = $pdo->prepare('DELETE FROM formationsarep WHERE id = :id');
         ));
   
     }
-    if(isset($_GET['idFormationPro'])){
-        $idFormatioPro = $_GET['idFormationPro'];
+
+    if(isset($_GET['idFormationPros'])){
+        $idFormatioPro = $_GET['idFormationPros'];
         
         $deleteContenu = $pdo->prepare('DELETE FROM formationsprofessionelles WHERE id = :id');
                 $deleteContenu->execute(array(
@@ -19,5 +20,8 @@ $deleteContenu = $pdo->prepare('DELETE FROM formationsarep WHERE id = :id');
                 ));
           
             }
+
+            header("Location: /valarep/admin/formations/toutes-formations.php"); 
+
       
 ?>

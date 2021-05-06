@@ -48,7 +48,7 @@ if(!isset($_SESSION['id'])){
                   
                     <input class="input-inscription" type="text" name="connexion-identifiant" placeholder="Login">
                     <input class="input-inscription" type="password" name="connexion-mdp" placeholder="Mot de passe">
-                    <input class="input-inscription" type="submit" name="connexion-bouton" value="S' inscrire">
+                    <input class="input-inscription" type="submit" name="connexion-bouton" value="Se connecter">
                     
                
                 </form>

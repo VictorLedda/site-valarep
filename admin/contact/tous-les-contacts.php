@@ -18,7 +18,7 @@ require('../../vues/sidebar_admin.php');
 
 ?>
 <header>
-<label for='update' class='update'>Mettre à jour </label>
+<label for='update' class='update displayNone'>Mettre à jour</label>
 
 </header>
 <h2 class='titre-tous-les-contacts'>Tous les contacts</h2>
@@ -54,23 +54,32 @@ require('../../vues/sidebar_admin.php');
 
         </div>
         
-        <label for='new-avatar<?= $c['id'] ?>' class='contact-changer-image'>Changer image</label>
-        <input type='file' name='new-avatar' class='new-avatar-contact' id='new-avatar<?= $c['id'] ?>'/>
-        
-        <div>
-        <input type='submit' value='Mettre à jour' id='update' class='update'/>
+       <label for='new-avatar<?= $c['id'] ?>' class='contact-changer-image'>Changer image</label>
+        <input type='file' name='new-avatar<?= $c['id'] ?>' class='new-avatar-contact' id='new-avatar<?= $c['id'] ?>'/>
+       <input id='update-contact<?= $c['id'];  ?>' type='submit' value='Mettre à jour' id='update' class='displayNone'/>
+     
+      
     </form>
            <form  class='ajout-offre' enctype= 'multipart/form-data' method="POST" action='/valarep/admin/index.php?action=supp-contact&idContact=<?= $c['id']; ?>'>
             <input id='corbeille<?= $c['id'] ?>' class='bouton-supprimer' type='submit' value='supprimer'/>
             </form> 
            
-       </div>
+            <div class='icons-update-contacts' >
+
+
+<div>
        <img class='icon-corbeille'  src='/valarep/images/corbeille-rouge.PNG'/>
        <label class='label-corbeille' for='corbeille<?= $c['id'] ?>'>
        
             Supprimer</label>
+    </div>
+    <div>
+<label class='label-icon-check' for='update-contact<?= $c['id'];  ?>'>Mettre à jour</label>
+<img class='icon-check' src='/valarep/images/check-vert.PNG'/>
+</div>    
     
 </div>
+    </div>
     <img class='avatar-editer' src='/valarep/images_uploads/avatars_contacts/<?=  $c['avatar'];  ?>'/>
    
 </div>
@@ -89,6 +98,9 @@ require('../../vues/sidebar_admin.php');
 
 
 <?php
+}else{
+
+    header("Location: /valarep/admin");
 }
 include('../../vues/scripts.php');
 

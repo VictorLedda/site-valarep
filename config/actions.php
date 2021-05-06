@@ -12,6 +12,7 @@ $listeDesActions = array(
     "arep" => "../traitements/ajout-formations-arep.php",
     "supp-contact" => "../traitements/supprimer-contact.php",
     "supp-formations" => "../traitements/supprimer-formation.php",
-    "editer-contact" => "../traitements/editer-contact.php"
+    "editer-contact" => "../traitements/editer-contact.php",
+    "editer-formations" => "../traitements/editer-formations.php"
     
 );
