@@ -16,11 +16,11 @@ require_once('./vues/header.php');
 <section class='poles-formations container'>
 <h3 class='titre-section-formations'>Nos formations</h3>
 
-<div class='toutes-les-formations'>
+<div class='toutes-les-formations scroll-part is-invert'>
 
 <div>
 
-    <div class='formations-infos'>
+    <div class='formations-infos content__to-scale'>
 
         <div class='titre-poles-formations'>
             <div>
@@ -47,7 +47,7 @@ require_once('./vues/header.php');
 
 <div>
 
-    <div class='formations-infos'>
+    <div class='formations-infos content__to-scale'>
 
         <div class='titre-poles-formations'>
             <div>
@@ -75,7 +75,7 @@ require_once('./vues/header.php');
 
 <div>
 
-    <div class='formations-infos'>
+    <div class='formations-infos content__to-scale'>
 
         <div class='titre-poles-formations'>
             <div>
@@ -107,13 +107,13 @@ require_once('./vues/header.php');
 
 </section>
 
-<section class='notre-role container'>
+<section class='notre-role container scroll-part is-invert'>
  
 
 
-<img class='photo-role' src='images/role.jpg'/>
+<img class='photo-role content__to-right' src='images/role.jpg'/>
 
-    <div class='contenu-notre-role'>
+    <div class='contenu-notre-role content__to-left'>
     <h3 class='notre-role-titre'>Notre rôle</h3>
     <div class='trait-bleu'></div>
     <p>Lorem Ipsum is simply dummy text of the printing and
@@ -129,9 +129,9 @@ five centuries.</p>
     </div>
 
 </section>
-<section class='lycee-dampierre container'>
+<section class='lycee-dampierre container scroll-part is-invert'>
  
-<div class='contenu-notre-role'>
+<div class='contenu-notre-role content__to-right'>
     <h3 class='notre-role-titre'>Le lycée Dampierre </h3>
     <div class='trait-bleu'></div>
     <p>Lorem Ipsum is simply dummy text of the printing and
@@ -146,26 +146,26 @@ standard dummy text ever since the 1500s.</p>
 
     </div>
 
-<img class='photo-dampierre' src='images/dampierre.jpg'/>
+<img class='photo-dampierre content__to-left' src='images/dampierre.jpg'/>
 
     
 
 </section>
 
-<section class='partenaires container'>
+<section class='partenaires container scroll-part is-invert'>
 
 
  
 
 
-<div class='logos-partenaires'>
+<div class='logos-partenaires content__to-right'>
 <img class='logo-partenaire' src='images/logo-fafih.png'/>
 <img class='logo-partenaire' src='images/pole-emploi.png'/>
 <img class='logo-partenaire' src='images/logo-europe.jpg'/>
 <img class='logo-partenaire' src='images/valenciennes-métropole.jpg'/>
 </div>
 
-    <div class='contenu-notre-role'>
+    <div class='contenu-notre-role content__to-left'>
     <h3 class='notre-role-titre'>Nos partenaires</h3>
     <div class='trait-bleu'></div>
     <p>Lorem Ipsum is simply dummy text of the printing and

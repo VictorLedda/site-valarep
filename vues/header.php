@@ -26,9 +26,9 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 
 
 
-<header class='header'>
+<header class='header is-normal-header'>
 
-<a  href='index.php'><img class='logo' src='/valarep/images/logo-png.png' /></a>
+<a  href='index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
 
 <nav>
     <ul class='menu'>
@@ -45,7 +45,17 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 </div>
 </div>
 </div>
-       <a href='/valarep/chateau-fortier/'> <li>Chateau fortier</li></a>
+<div class='chateau-header'>
+      <li>Chateau fortier</li>
+      <div class='block-menu-chateau'>
+       <img class='triangle-menu' src='/valarep/images/triangle.PNG' />
+    <div class='menu-chateau-header'>
+
+        <a href='/valarep/chateau-fortier/'><li>Découvrir</li></a>
+        <a href='/valarep/chateau-fortier/reservations.php'><li>Réserver</li></a>
+</div>
+</div>
+</div>
        <a href='/valarep/contact.php'> <li>Nous contacter</li></a>
        <a href='https://valarep.fr/ent-valarep/'> <li>ENT</li></a>
        <a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'> <li>GED</li></a>
@@ -53,11 +63,7 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 
 </nav>
 
-<div class='esapce-membre'>
-<h3>Espace membre</h3>
-<img class='image-membre' src='/valarep/images/compte-png.png' />
 
-<div>
 
 
 

@@ -19,9 +19,19 @@
 
 <div class='container infos-footer'>
     <div class='infos-facebook'>
-<img class='facebook' src='images/facebook-blanc.png'/>
+<img class='facebook' src='/valarep/images/facebook-blanc.png'/>
 <span>03 27 21 58 58</span>
 </div>
 <span class='mentions-legales'>Mentions légales</span>
 </div>
 </footer>
+
+<script src="/valarep/js/gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+
+
+<script src="../js/node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script src="/valarep/js/gsap.js"></script>
+<script src="/valarep/js/animations.js"></script>

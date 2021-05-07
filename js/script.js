@@ -1,6 +1,8 @@
 // Block error //
 
 
+
+
 let formations_fleche = document.querySelector('.fleche-formations');
 let menu_formations = document.querySelector('.menu-formations');
 
@@ -9,7 +11,7 @@ formations_fleche.addEventListener('click', function(){
    console.log( menu_formations.classList[1])
    
     if(menu_formations.classList[1] == "displayNone"){
-        console.log('cool')
+  
         menu_formations.classList.remove('displayNone')
         
     }else{
@@ -90,4 +92,6 @@ editer_icon_formations[i].addEventListener('click', function(){
 })
 
 }
+
+
 

@@ -53,7 +53,7 @@ while($c=$reqcontact->fetch()){
     ?>
     <div class='trait-gris'></div>
 <div class='contact <?php if($c['id'] % 2 !== 0){ echo 'reverse';}?> '>
-    <img class='photo-contact' src='images/<?= $c['avatar']; ?>'/>
+    <img class='photo-contact' src='images_uploads/avatars_contacts/<?= $c['avatar']; ?>'/>
     <div class='infos-contact'>
         <h2 class='contact-fonction'><?= $c['fonction']; ?></h2>
         <div class='partie-contact'>

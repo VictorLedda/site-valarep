@@ -1,15 +1,16 @@
 .header{
    position: relative;
    z-index: 10;
-    height: 80px;
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     box-shadow: -1px 7px 29px -18px #000000;
+    position: fixed;
+    background-color: white;
 
     .logo{
-        width: 120px;
-        height: 70px;
+     
         margin-left: 50px;
         margin-top: 2px;
     }
@@ -31,8 +32,55 @@
             text-align: center;
         }
     }
+    .chateau-header{
+        text-align: center;
+
+       
+
+        .block-menu-chateau:hover{
+            cursor: pointer;
+            opacity: 1;
+            animation-name: header-menu;
+            animation-duration: 1s;
+        }
+        .block-menu-chateau{
+           position: relative;
+           bottom: 40px;
+           opacity: 0;
+           .menu-chateau-header{
+               position: relative;
+               bottom: 8px;
+               background-color: #f4f4f4;
+               height: 100px;
+               width: 150px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+
+               a{
+                   li{
+                   color: black;
+                   font-size: 15px;
+                   font-family: 'Architects Daughter', cursive;
+                   text-align: center;
+               }
+           }
+           }
+       }
+       
+              
+                 li{
+                   color: black;
+           font-size: 15px;
+           font-family: 'Architects Daughter', cursive;
+               
+           }
+       }
      .formations-header{
          text-align: center;
+
+        
+
          .block-menu-formations:hover{
              cursor: pointer;
              opacity: 1;

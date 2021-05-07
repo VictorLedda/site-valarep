@@ -1,3 +1,7 @@
+.margin-left{
+    margin-left: 200px;
+}
+
 .titre-chateau{
     padding-top: 70px;
     padding-bottom: 40px;
@@ -10,13 +14,11 @@
 .presentation-chateau{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 
-.video{
-    box-shadow: -120px 120px 0px -60px #649fba;
-}
+
     .chateau-text{
-        padding-left: 200px;
+     
     .sous-titre-chateau{
 display: flex;
 h2{
@@ -43,13 +45,26 @@ h2{
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    position: relative;
 
 .image-recettes{
-    box-shadow: 130px -130px 0px -100px #649fba;
+   position: relative;
+   z-index: 10px;
     width: 450px;
     padding-left: 200px;
 }
-    .chateau-text{
+/*
+.chateau-text-recettes{
+opacity: 0.1;
+position: relative;
+right: 180px;
+}
+.block-recette{
+    position: relative;
+left: 180px;
+}
+*/
+    .chateau-text, .chateau-text-recettes{
         
     .sous-titre-chateau{
 display: flex;
@@ -73,12 +88,142 @@ h2{
 }
 }
 
-.titre-images-chateau{
-    font-size: 30px;
-    text-align: center;
+.titre-slide{
     font-family: 'Roboto', sans-serif; 
-    padding-bottom: 100px;
-    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.glide{
+    cursor: pointer;
+padding-bottom: 150px;
+overflow: hidden;
+
+margin: auto;
+.glide__track{
+    
+    width: 80%;
+    .glide__slides__perso{
+        display: flex;
+        
+.glide__slide{
+    border: 1px solid #649fba;
+    
+    text-align: center;
+    
+    width: 1000px;
+    height: 280px;
+  
+    .rotate1{
+        transform: rotate(-5deg);
+    }
+    .rotate2{
+        transform: rotate(-1deg);
+    }
+    .rotate3{
+        transform: rotate(3deg);
+    }
+    .rotate4{
+        transform: rotate(1.5deg);
+    }
+    .image-slide{
+        
+        margin: 40px auto 0px auto;
+        width: 80%;
+        height: 190px;
+    }
+    .paragraphe-image{
+        font-family: 'Architects Daughter', cursive;
+    }
+}
+
+
+    }
+}
+.center{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+}
+.glide__arrows{
+   
+    display: flex;
+    justify-content: space-between;
+
+    .fleche-gauche{
+        transform: rotate(-180deg);
+    }
+    .glide__arrow{
+        background: transparent;
+        border: none;
+    .fleche{
+        width: 30px;
+        cursor: pointer;
+    }
+   
+}
+}
+
+.glide__bullets{
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    height: 0px;
+
+    .glide__bullet{
+        margin-right: 10px;
+        margin-left: 10px;
+        border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 1000px;
+    border: 1px solid #649fba;
+    background: transparent;
+}
+.glide__bullet--active{
+    background-color: #649fba;
+}
+}
 
 }
+
+
+
+.block-recette{
+    position: relative;
+    bottom: 100px;
+    
+}
+.carre-bleu-recttes{
+    left: 35rem;
+   
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    background: #649fba;
+  position: relative;
+  z-index: -10;
+}
+
+.carre-bleu-video{
+    width: 150px;
+    height: 150px;
+    background-color: #649fba;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    z-index: -10;
+}
+
+.schotch{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
 
