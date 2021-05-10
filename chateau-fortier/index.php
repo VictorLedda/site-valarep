@@ -7,7 +7,7 @@ include('../vues/header.php');
 
 <div class='presentation-chateau container scroll-part is-invert'>
     <div class='content__to-right'>
-        <iframe class='video' width="500" height="300" src="https://www.youtube.com/embed/KO50jYvXXoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class='video'  src="https://www.youtube.com/embed/KO50jYvXXoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="carre-bleu-video"></div>
         </div>
        
@@ -140,7 +140,7 @@ include('../vues/header.php');
     the industry's standard dummy text ever since the 
     1500s, when an unknown printer took a galley of 
     type and scrambled it to make a type specimen book.</p>
-<a href='/valarep/chateau-fortier/menu_chateau_fortier.pdf' download='Recettes_chateau_fortier'><button class='telecharger-documentation'>Télécharger</button></a>
+<a href='/valarep/chateau-fortier/menu_chateau_fortier.pdf' download='Recettes_chateau_fortier'><button class='telecharger-documentation telecharger-recettes'>Télécharger</button></a>
 </div>
 <div class='block-recette content__to-left'>
 <div class="carre-bleu-recttes"></div>
@@ -162,13 +162,19 @@ require_once('../vues/footer.php');
 
 ?>
 <script>
-  
-
+  console.log(window)
+  console.log(window.innerWidth)
+  if(window.innerWidth < 480){
+    
+    let test = 2
+    console.log(test)
+  }
   new Glide('.glide', {
+    
   type: 'carousel',
   startAt: 0,
-  
-  perView: 4
+  autoplay: "2000",
+  perView: 3
 }).mount()
 
 </script>

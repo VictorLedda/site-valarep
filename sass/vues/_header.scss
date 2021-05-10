@@ -1,183 +1,6 @@
 body{
     overflow-x: hidden;
 }
-@media screen  and (min-width: 1281px) {
-
-.header{
-    margin: 0px;
-   position: relative;
-   z-index: 10;
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: -1px 7px 29px -18px #000000;
-    position: fixed;
-    background-color: white;
-    margin-bottom: 100px;
-
-    .logo{
-     
-        margin-left: 50px;
-        margin-top: 2px;
-    }
-.souligne{
-    margin-top: 2px;
-    height: 2px;
-    width: 100%;
-    background-color: #649fba ;
-    
-    background: linear-gradient(to right, #649fba 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .35s ease-out;
-    
-}
-
-    nav{
-        width: 65%;
-        margin-top: 10px;
-       
-    }
-    .menu{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        a:hover .souligne{
-            
-                background-position: left bottom;
-            
-        }
-        li:hover{ li{
-            font-family: 'Architects Daughter', cursive;
-            font-weight: 600px;
-        }
-    }
-        a{
-            li{
-            color: black;
-            font-size: 15px;
-            font-family: 'Architects Daughter', cursive;
-            text-align: center;
-        }
-    }
-    .chateau-header{
-        text-align: center;
-
-        
-        .block-menu-chateau:hover{
-            cursor: pointer;
-            opacity: 1;
-            animation-name: header-menu;
-            animation-duration: 1s;
-        }
-        .block-menu-chateau{
-           position: relative;
-           bottom: 40px;
-           opacity: 0;
-           .menu-chateau-header{
-               position: relative;
-               bottom: 8px;
-               background-color: #f4f4f4;
-               height: 100px;
-               width: 150px;
-               display: flex;
-               flex-direction: column;
-               justify-content: space-around;
-              
-               a{
-                   li{
-                   color: black;
-                   font-size: 15px;
-                   font-family: 'Architects Daughter', cursive;
-                   text-align: center;
-               }
-           }
-           }
-       }
-       
-              
-                 li{
-                   color: black;
-           font-size: 15px;
-           font-family: 'Architects Daughter', cursive;
-               
-           }
-       }
-     .formations-header{
-         text-align: center;
-
-        
-
-         .block-menu-formations:hover{
-             cursor: pointer;
-             opacity: 1;
-             animation-name: header-menu;
-             animation-duration: 1s;
-         }
-         .block-menu-formations{
-            position: relative;
-            bottom: 40px;
-            opacity: 0;
-            .menu-formations-header{
-                position: relative;
-                bottom: 8px;
-                background-color: #f4f4f4;
-                height: 100px;
-                width: 150px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-
-                a{
-                    li{
-                    color: black;
-                    font-size: 15px;
-                    font-family: 'Architects Daughter', cursive;
-                    text-align: center;
-                }
-            }
-            }
-        }
-        
-               
-                  li{
-                    color: black;
-            font-size: 15px;
-            font-family: 'Architects Daughter', cursive;
-                
-            }
-        }
-    }
-}
-
-
-.esapce-membre{
-    display: flex;
-   
-h3{
-    margin-top: 20px;
-    margin-right: 10px;
-    font-size: 15px;
-    font-family: 'Architects Daughter', cursive;
-}
-    .image-membre{
-        margin-right: 10px;
-        margin-top: 10px;
-        width: 50px;
-        height: 50px ;
-    }
-
-
-}
-
-
-.triangle-menu{
-    margin: 0px;
-    width: 65px;
-}
-
-}
 
 
 @keyframes header-menu {
@@ -192,60 +15,235 @@ h3{
     }
   }
 
+  @media screen  and (min-width: 1280px ){
+.header nav{
+    width: 70%;
+}
 
-
+  }
 
   @media screen  and (min-width: 960px ) and (max-width: 1280px){
+    .header nav{
+        width: 85%;
+    }
+    
+      }
 
 
+
+  @media screen  and (min-width: 960px ){
+
+    .header{
+        margin: 0px;
+       position: relative;
+       z-index: 10;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: -1px 7px 29px -18px #000000;
+        position: fixed;
+        background-color: white;
+        margin-bottom: 100px;
+    
+        .logo{
+         
+            margin-left: 50px;
+            margin-top: 2px;
+        }
+    .souligne{
+        margin-top: 2px;
+        height: 2px;
+        width: 100%;
+        background-color: #649fba ;
+        
+        background: linear-gradient(to right, #649fba 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .35s ease-out;
+        
+    }
+    
+        nav{
+       
+            margin-top: 10px;
+           
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            a:hover .souligne{
+                
+                    background-position: left bottom;
+                
+            }
+            li:hover{ li{
+                font-family: 'Architects Daughter', cursive;
+                font-weight: 600px;
+            }
+        }
+            a{
+                li{
+                color: black;
+                font-size: 15px;
+                font-family: 'Architects Daughter', cursive;
+                text-align: center;
+            }
+        }
+        .chateau-header{
+            text-align: center;
+    
+            
+            .block-menu-chateau:hover{
+                cursor: pointer;
+                opacity: 1;
+                animation-name: header-menu;
+                animation-duration: 1s;
+            }
+            .block-menu-chateau{
+               position: relative;
+               bottom: 40px;
+               opacity: 0;
+               .menu-chateau-header{
+                   position: relative;
+                   bottom: 8px;
+                   background-color: #f4f4f4;
+                   height: 100px;
+                   width: 150px;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-around;
+                  
+                   a{
+                       li{
+                       color: black;
+                       font-size: 15px;
+                       font-family: 'Architects Daughter', cursive;
+                       text-align: center;
+                   }
+               }
+               }
+           }
+           
+                  
+                     li{
+                       color: black;
+               font-size: 15px;
+               font-family: 'Architects Daughter', cursive;
+                   
+               }
+           }
+         .formations-header{
+             text-align: center;
+    
+            
+    
+             .block-menu-formations:hover{
+                 cursor: pointer;
+                 opacity: 1;
+                 animation-name: header-menu;
+                 animation-duration: 1s;
+             }
+             .block-menu-formations{
+                position: relative;
+                bottom: 40px;
+                opacity: 0;
+                .menu-formations-header{
+                    position: relative;
+                    bottom: 8px;
+                    background-color: #f4f4f4;
+                    height: 100px;
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+    
+                    a{
+                        li{
+                        color: black;
+                        font-size: 15px;
+                        font-family: 'Architects Daughter', cursive;
+                        text-align: center;
+                    }
+                }
+                }
+            }
+            
+                   
+                      li{
+                        color: black;
+                font-size: 15px;
+                font-family: 'Architects Daughter', cursive;
+                    
+                }
+            }
+        }
+    }
+    
+    
+    .esapce-membre{
+        display: flex;
+       
+    h3{
+        margin-top: 20px;
+        margin-right: 10px;
+        font-size: 15px;
+        font-family: 'Architects Daughter', cursive;
+    }
+        .image-membre{
+            margin-right: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px ;
+        }
+    
+    
+    }
+    
+    
+    .triangle-menu{
+        margin: 0px;
+        width: 65px;
+    }
 
 
 
 }
 
-@media screen  and (min-width: 480px  ) and (max-width: 959px){
+@media screen  and (min-width: 0px  ) and (max-width: 959px){
 
     .header-normal-none{
         display: none;
     }
-
-
-
-}
-@media screen  and (min-width: 0px  ) and (max-width: 479px ){
-
-.header-normal-none{
-    display: none;
-}
-
-.header-portable{
+    .header-portable{
    
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    .logo-portable{
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 75px;
-        height: 65px;
-    }
-    .menu-header-portable{
-        margin-top: 12px;
-        margin-right: 12px;
-        width: 50px;
-        height: 50px;
-        .ligne-menu{
-            background-color: #414143;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        .logo-portable{
             margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            height: 5px;
-            width: 100%;
+            margin-left: 10px;
+            width: 75px;
+            height: 65px;
+        }
+        .menu-header-portable{
+            margin-top: 12px;
+            margin-right: 12px;
+            width: 50px;
+            height: 50px;
+            .ligne-menu{
+                background-color: #414143;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                height: 5px;
+                width: 100%;
+            }
         }
     }
+
+
 }
 
-
-
-}

@@ -1,6 +1,77 @@
-.margin-left{
-    margin-left: 200px;
+@media screen  and (min-width: 960px) and (max-width: 1280px){
+    .presentation-chateau{
+        display: block;
+        
+    }
+    .video{
+        width: 100%;
+       height: 450px;
+    }
+
+    .margin-left{
+        margin-left: 0px;
+    }
+    .presentation-recettes{
+        display: block;
+        
+    }
+    .image-recettes{
+      
+        z-index: 10px;
+        width: 100%;
+       
+         
+     }
+     .carre-bleu-recttes{
+       display: none;
+    }
+    .chateau-text-recettes{
+        padding-bottom: 140px;
+    }
+
 }
+
+@media screen  and (min-width: 1280px){
+    .carre-bleu-recttes{
+        left: 35rem;
+       
+        width: 150px;
+        height: 150px;
+        top: 100px;
+        background: #649fba;
+      position: relative;
+      z-index: -10;
+    }
+    .video{
+        width: 500px;
+        height: 300px;
+    }
+    .presentation-chateau{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        
+    }    
+    .margin-left{
+        margin-left: 200px;
+    }
+    .presentation-recettes{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+        position: relative;
+    }
+    .image-recettes{
+        position: relative;
+        z-index: 10px;
+         width: 450px;
+         padding-left: 200px;
+     }
+}
+
+@media screen  and (min-width: 960px){
+
+
 .test-essaye{
     padding-top: 150px;
 .titre-chateau{
@@ -12,9 +83,7 @@
 
 
 .presentation-chateau{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  
     
 
 
@@ -44,17 +113,8 @@ h2{
 }
 
 .presentation-recettes{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    position: relative;
 
-.image-recettes{
-   position: relative;
-   z-index: 10px;
-    width: 450px;
-    padding-left: 200px;
-}
+
 /*
 .chateau-text-recettes{
 opacity: 0.1;
@@ -197,16 +257,7 @@ margin: auto;
     bottom: 100px;
     
 }
-.carre-bleu-recttes{
-    left: 35rem;
-   
-    width: 150px;
-    height: 150px;
-    top: 100px;
-    background: #649fba;
-  position: relative;
-  z-index: -10;
-}
+
 
 .carre-bleu-video{
     width: 150px;
@@ -221,6 +272,251 @@ margin: auto;
 .schotch{
     width: 40px;
     height: 40px;
+}
+
+}
+@media screen  and (min-width: 480px  ) and (max-width: 960px ){
+    .video{
+        width: 100%;
+        height: 350px;
+    }
+}
+@media screen  and (min-width: 0px  ) and (max-width: 480px ){
+    .video{
+        width: 100%;
+        height: 250px;
+    }
+}
+@media screen  and (min-width: 0px  ) and (max-width: 960px ){
+
+.video{
+
+    margin-bottom: 30px;
+}
+    .test-essaye{
+        padding-top: 150px;
+    .titre-chateau{
+        padding-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif; 
+    }
+    
+    
+    .presentation-chateau{
+       
+        padding-bottom: 10px;
+        
+    
+    
+        .chateau-text{
+         
+        .sous-titre-chateau{
+    display: flex;
+    h2{
+        font-family: 'Roboto', sans-serif; 
+        position: relative;
+        bottom: 10px;
+    }
+            .trait-bleu-vertical{
+                height: 40px;
+                width: 2px;
+                margin-right: 20px;
+                background-color: #649fba;
+            }
+        }
+        p{
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: justify;
+           max-width: 1000px;
+            font-family: 'Athiti', sans-serif;
+        }
+    }
+    }
+    }
+    
+    .presentation-recettes{
+       display: flex;
+       flex-direction: column-reverse;
+        padding-bottom: 100px;
+        position: relative;
+        text-align: center;
+    
+    .image-recettes{
+        width: 95%;
+       position: relative;
+       z-index: 10px;
+       
+     
+    }
+    /*
+    .chateau-text-recettes{
+    opacity: 0.1;
+    position: relative;
+    right: 180px;
+    }
+    .block-recette{
+        position: relative;
+    left: 180px;
+    }
+    */
+        .chateau-text, .chateau-text-recettes{
+            
+        .sous-titre-chateau{
+    display: flex;
+    h2{
+        font-family: 'Roboto', sans-serif; 
+        position: relative;
+        bottom: 10px;
+    }
+            .trait-bleu-vertical{
+                height: 40px;
+                width: 2px;
+                margin-right: 20px;
+                background-color: #649fba;
+            }
+        }
+        p{
+            margin-right: 15px;
+            margin-left: 15px;
+            text-align: justify;
+           max-width: 800px;
+            font-family: 'Athiti', sans-serif;
+        }
+        .telecharger-recettes{
+            margin-left: 15px;
+        }
+    }
+    }
+    
+    .titre-slide{
+        font-family: 'Roboto', sans-serif; 
+        text-align: center;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+    .glide{
+        cursor: pointer;
+    padding-bottom: 150px;
+    overflow: hidden;
+    
+    margin: auto;
+    .glide__track{
+        
+        width: 80%;
+        .glide__slides__perso{
+            display: flex;
+            
+    .glide__slide{
+        border: 1px solid #649fba;
+        
+        text-align: center;
+        
+        width: 1000px;
+        height: 280px;
+      
+        .rotate1{
+            transform: rotate(-5deg);
+        }
+        .rotate2{
+            transform: rotate(-1deg);
+        }
+        .rotate3{
+            transform: rotate(3deg);
+        }
+        .rotate4{
+            transform: rotate(1.5deg);
+        }
+        .image-slide{
+            
+            margin: 40px auto 0px auto;
+            width: 80%;
+            height: 190px;
+        }
+        .paragraphe-image{
+            font-family: 'Architects Daughter', cursive;
+        }
+    }
+    
+    
+        }
+    }
+    .center{
+      display: flex;
+      justify-content: center;
+        width: 100%;
+    }
+    .glide__arrows{
+       
+        display: flex;
+        justify-content: space-between;
+    
+        .fleche-gauche{
+            transform: rotate(-180deg);
+        }
+        .glide__arrow{
+            background: transparent;
+            border: none;
+        .fleche{
+            width: 30px;
+            cursor: pointer;
+        }
+       
+    }
+    }
+    
+    .glide__bullets{
+        margin-top: 40px;
+        display: flex;
+        text-align: center;
+        height: 0px;
+    
+        .glide__bullet{
+            margin-right: 10px;
+            margin-left: 10px;
+            border: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 1000px;
+        border: 1px solid #649fba;
+        background: transparent;
+    }
+    .glide__bullet--active{
+        background-color: #649fba;
+    }
+    }
+    
+    }
+    
+    
+    
+    .block-recette{
+        position: relative;
+        bottom: 100px;
+        
+    }
+    .carre-bleu-recttes{
+        left: 35rem;
+       
+        width: 150px;
+        height: 150px;
+        top: 100px;
+        background: #649fba;
+      position: relative;
+      z-index: -10;
+    }
+    
+    .carre-bleu-video{
+       display: none;
+    }
+    
+    .schotch{
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 
