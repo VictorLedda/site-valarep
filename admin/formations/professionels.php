@@ -29,7 +29,7 @@ require('../../vues/errors/f_pros.php');
 ?>
 
 
-<h2 class='titre-professionelles'>Ajouter une formation professionnelle</h2>
+<h2 class='titre-professionelles'>Ajouter une formation en apprentissage</h2>
 
 <form name='form' class='ajout-offre' enctype= 'multipart/form-data' method="POST" action='/valarep/admin/index.php?action=professionelles'>
 <input class='ajouter' name='publier' type='submit' value='publier' id='test'/>

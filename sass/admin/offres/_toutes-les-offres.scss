@@ -1,0 +1,106 @@
+.titre-toutes-offres{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+    margin: 0px;
+    padding-top: 50px;
+}
+.icons-update-offres{
+    display: flex;
+    justify-content: space-between;
+}
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toutes-offres{
+    padding-left: 300px;
+    .offres-editer{
+        display: flex;
+        justify-content: space-between;
+        .avatar-editer{
+            width: 350px;
+            height: 250px;
+        }
+        .offres-editer-infos{
+            font-family: 'Roboto', sans-serif;
+            width: 500px;
+          
+           }
+           .icon-corbeille{
+            font-family: 'Roboto', sans-serif;
+            width: 30px;
+            height: 30px;
+            padding-top: 20px;
+            position: relative;
+            top: 10px;
+        }
+       
+            .contact-changer-image{
+                background-color: #649fba;
+                color: white;
+                border: 1px solid #649fba;
+                font-size: 20px;
+                border-radius: 5px;
+                padding: 8px 20px 8px 20px;
+            }
+            .contact-changer-image:hover{
+                background-color: white;
+                color: #649fba;
+                transition-duration: 1s;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+.bouton-supprimer{
+    display: none;
+}
+.input-modif{
+    position: relative;
+    top: 8px;
+}
+
+.label-corbeille{
+    font-family: 'Roboto', sans-serif;
+    color: #ec5454;
+ cursor: pointer;
+ border: 1px solid #ec5454;
+ border-radius: 8px;
+ padding: 10px 30px 10px 30px;
+}
+
+.label-corbeille:hover{
+    background-color: #ec5454;
+    color: white;
+    transition-duration: 1s;
+}
+
+.new-avatar-contact{
+display: none;
+}
+
+
+.modifier{
+    margin-left: 500px;
+}
+
+.modif-description{
+margin-top: 50px;
+display: flex;
+text-align: justify;
+.textarea-modif{
+    width: 500px;
+    height: 150px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.textarea-non-modif{
+   padding-top: 20px;
+}
+
+}

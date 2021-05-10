@@ -1,15 +1,17 @@
 .titre-offres{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
 
 
 .offres{
+    padding-top: 150px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 50px;
 
     .offre{

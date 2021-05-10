@@ -56,7 +56,7 @@ require('../../vues/sidebar_admin.php');
         
        <label for='new-avatar<?= $c['id'] ?>' class='contact-changer-image'>Changer image</label>
         <input type='file' name='new-avatar<?= $c['id'] ?>' class='new-avatar-contact' id='new-avatar<?= $c['id'] ?>'/>
-       <input id='update-contact<?= $c['id'];  ?>' type='submit' value='Mettre à jour' id='update' class='displayNone'/>
+       <input id='update-contact<?= $c['id'];  ?>' type='submit' value='Mettre à jour' class='displayNone'/>
      
       
     </form>

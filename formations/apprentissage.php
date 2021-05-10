@@ -20,19 +20,20 @@ $reqrestauration->execute(array($res));
 ?>
 
 
-<h1 class='titre-apprentissage'>Nos formations en apprentissage</h1>
+
 
 <section class='apprentissage container'>
+<h1 class='titre-apprentissage'>Nos formations en apprentissage</h1>
     <div class='block-titre'>
     <img class='icon-titre' src='/valarep/images/icon-pc-bleu.PNG'/>
     <h3 class='titre-genre-formation'>Informatique</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($i=$reqinformatique->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_AREP/images/<?= $i['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $i['titre']?></h4>
@@ -48,12 +49,12 @@ while($i=$reqinformatique->fetch()){
     <img class='icon-titre' src='/valarep/images/industrie-bleu.PNG'/>
     <h3 class='titre-genre-formation'>Industrie</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($i=$reqindustrie->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_AREP/images/<?= $i['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $i['titre']?></h4>
@@ -70,12 +71,12 @@ while($i=$reqindustrie->fetch()){
     <img class='icon-titre' src='/valarep/images/assiette-bleu.PNG'/>
     <h3 class='titre-genre-formation'>Restauration</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($r=$reqrestauration->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_AREP/images/<?= $r['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $r['titre']?></h4>
@@ -91,12 +92,12 @@ while($r=$reqrestauration->fetch()){
     <img class='icon-titre' src='/valarep/images/immeuble-bleu.PNG'/>
     <h3 class='titre-genre-formation'>Bâtiment</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($b=$reqbatiments->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_AREP/images/<?= $b['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $b['titre']?></h4>
@@ -111,7 +112,7 @@ while($b=$reqbatiments->fetch()){
 </section>
 
 <?php
-
+require_once('../vues/footer.php');
 include('../vues/scripts.php');
 
 ?>

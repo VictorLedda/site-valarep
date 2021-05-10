@@ -9,10 +9,16 @@
       animation-delay: 0.3s;
       
     }
+    .is-inviewport .content__to-opacity {
+      animation: opacity 0.5s ease-in-out forwards;
+      animation-delay: 0.3s;
+      
+    }
+
 
     .is-inviewport   .content__to-right {
       animation: toRight 0.5s ease-in-out forwards;
-      animation-delay: 0.5s;
+      animation-delay: 0.3s;
     
     }
 
@@ -23,8 +29,19 @@
 
     .is-inviewport  .content__to-scale {
       animation: toScale 0.5s ease-in-out forwards;
-      animation-delay: 1s;
+      animation-delay: 0.3s;
      
+    }
+  
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      
+      }
+      100% {
+        opacity: 1;
+        
+      }
     }
   
 
@@ -52,7 +69,7 @@
   
     @keyframes toUp {
       0% {
-        opacity: 0;
+        opacity: 0.4;
         transform: translateY(40px);
       }
       100% {
@@ -75,25 +92,26 @@
 
     .is-small-menu{
       animation: menu 1.5s ;
+      transform-origin: center;
       width: 70px ;
       height: 40px;
      
   }
   
   .is-normal-menu{
-    animation-duration: 1.5s;
+    transition-duration: 1.5s;
       height: 100px;
-      width: 120px ;
+      width: 130px ;
       
   }
 
   .is-small-header{
     animation: header 1.5s ;
     height: 80px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 .is-normal-header{
-  animation-duration: 1.5s;
+  transition-duration: 1.5s;
     height: 120px;
 }
 
@@ -104,13 +122,13 @@
 
   to {
     height: 80px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     
   }
 }
   @keyframes menu {
       from {
-       width: 120px ;
+       width: 130px ;
        height: 80px;
       }
     

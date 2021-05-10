@@ -25,17 +25,22 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 </head>
 
 
-
+<div>
 <header class='header is-normal-header'>
 
 <a  href='index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
 
 <nav>
     <ul class='menu'>
-        <a  href='/valarep/index.php'><li>Accueil</li></a>
-       <a href='/valarep/offres.php'> <li>Nos offres</li></a>
+        <a  href='/valarep/index.php'><li>Accueil</li>
+    <div class='souligne'></div>
+    </a>
+       <a href='/valarep/offres.php'> <li>Nos offres</li>
+       <div class='souligne'></div>
+    </a>
        <div class='formations-header'>
        <li>Nos formations</li>
+       <div class='souligne'></div>
        <div class='block-menu-formations'>
        <img class='triangle-menu' src='/valarep/images/triangle.PNG' />
     <div class='menu-formations-header'>
@@ -47,6 +52,7 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 </div>
 <div class='chateau-header'>
       <li>Chateau fortier</li>
+      <div class='souligne'></div>
       <div class='block-menu-chateau'>
        <img class='triangle-menu' src='/valarep/images/triangle.PNG' />
     <div class='menu-chateau-header'>
@@ -56,9 +62,11 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 </div>
 </div>
 </div>
-       <a href='/valarep/contact.php'> <li>Nous contacter</li></a>
-       <a href='https://valarep.fr/ent-valarep/'> <li>ENT</li></a>
-       <a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'> <li>GED</li></a>
+       <a href='/valarep/contact.php'> <li>Nous contacter</li>
+       <div class='souligne'></div></a>
+       <a href='https://valarep.fr/ent-valarep/'> <li>ENT</li>
+       <div class='souligne'></div></a>
+       <a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'> <li>GED</li><div class='souligne'></div></a>
     <ul>
 
 </nav>
@@ -69,3 +77,4 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 
 </header>
 
+</div>

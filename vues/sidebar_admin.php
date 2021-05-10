@@ -60,14 +60,22 @@
 </div>
 </div>
 
-<a href="/valarep/admin/reservations.php"><div class='onlets-sidebar'>
-<div class='sidebar-part'>
-<img class='icon' src='/valarep/images/calendrier-blanc.png'/>
-<h4 class='nom-onglets'>Réservations</h4>
-</div>
-<img class='fleche' src='/valarep/images/fleche.png'/>
 
-</div></a>
+<div class='onlets-sidebar'>
+<div class='sidebar-part'>
+<img class='icon ' src='/valarep/images/icon-offre-blanc.png'/>
+<h4 class='nom-onglets'>Chateau Fortier</h4>
+</div>
+<img class='fleche fleche-chateau' src='/valarep/images/fleche.png'/>
+</div>
+<div class="menu-sidebar">
+<div class="menu-chateau displayNone">
+<a href='/valarep/admin/chateau-fortier/'><div class="menu-chateau-image menu-onglet"><span>Ajouter une photo</span></div></a>
+<a href='/valarep/admin/chateau-fortier/reservations.php'><div class="menu-chateau-reservations menu-onglet"><span>Reservations</span></div></a>
+</div>
+</div>
+
+
 
 
 <div class="div-vide"></div>

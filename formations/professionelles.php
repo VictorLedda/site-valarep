@@ -19,19 +19,20 @@ $reqtitres_pro->execute(array($titres_pro));
 ?>
 
 
-<h1 class='titre-apprentissage'>Nos formations profesionnelles</h1>
+
 
 <section class='apprentissage container'>
+<h1 class='titre-apprentissage'>Nos formations profesionnelles</h1>
     <div class='block-titre'>
-    <img class='icon-titre' src='/valarep/images/icon-pc-bleu.PNG'/>
+   
     <h3 class='titre-genre-formation'>CAP</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($c=$reqcap->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_Professionelles/images/<?= $c['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $c['titre']?></h4>
@@ -44,15 +45,15 @@ while($c=$reqcap->fetch()){
 </div>
 
 <div class='block-titre'>
-    <img class='icon-titre' src='/valarep/images/icon-pc-bleu.PNG'/>
+    
     <h3 class='titre-genre-formation'>Bac professionel</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($b=$reqbac_pro->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_Professionelles/images/<?= $b['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $b['titre']?></h4>
@@ -66,15 +67,15 @@ while($b=$reqbac_pro->fetch()){
 
 
 <div class='block-titre'>
-    <img class='icon-titre' src='/valarep/images/icon-pc-bleu.PNG'/>
+    
     <h3 class='titre-genre-formation'>Titres pros</h3>
 </div>
-<div class="formations">
+<div class="formations scroll-part is-invert">
 <?php
 while($t=$reqtitres_pro->fetch()){
 
     ?>
-<div class="formation">
+<div class="formation content__to-up">
     <img class='image-formation' src='/valarep/images_uploads/Formation_Professionelles/images/<?= $t['image'] ?>'/>
     <div class="trait-bleu-horizontal"></div>
     <h4><?= $t['titre']?></h4>
@@ -91,7 +92,7 @@ while($t=$reqtitres_pro->fetch()){
 </section>
 
 <?php
-
+require_once('../vues/footer.php');
 include('../vues/scripts.php');
 
 ?>

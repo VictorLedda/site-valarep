@@ -2,11 +2,17 @@
     text-align: center;
     font-size: 40px;
     font-family: 'Roboto', sans-serif; 
+   padding-bottom: 15px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
 }
 
 .contact-pricipal{
-display: flex;
-justify-content: center;
+    padding-top: 170px;
+
+
     .image-contact-principal{
         width: 650px;
         height: 400px;

@@ -7,8 +7,10 @@ $reqcontact = $pdo->query("SELECT * FROM contacts");
 
 ?>
 
-<h2 class='titre-conatct'>Nous contacter</h2>
+
 <section class='contact-pricipal container'>
+<h2 class='titre-conatct'>Nous contacter</h2>
+<div class='flex'>
 <img class='image-contact-principal' src='images/contact.jpg'/>
 
 
@@ -36,7 +38,7 @@ $reqcontact = $pdo->query("SELECT * FROM contacts");
 </div>
 </div>
 </div>
-
+</div>
 
 </div>
 
@@ -52,9 +54,9 @@ while($c=$reqcontact->fetch()){
 
     ?>
     <div class='trait-gris'></div>
-<div class='contact <?php if($c['id'] % 2 !== 0){ echo 'reverse';}?> '>
-    <img class='photo-contact' src='images_uploads/avatars_contacts/<?= $c['avatar']; ?>'/>
-    <div class='infos-contact'>
+<div class=' contact <?php if($c['id'] % 2 !== 0){ echo 'reverse';}?> scroll-part is-invert'>
+    <img class='photo-contact <?php if($c['id'] % 2 !== 0){ echo 'content__to-left';}else{ echo 'content__to-right';}?>' src='images_uploads/avatars_contacts/<?= $c['avatar']; ?>'/>
+    <div class='infos-contact <?php if($c['id'] % 2 == 0){ echo 'content__to-left';}else{ echo 'content__to-right';}?>'>
         <h2 class='contact-fonction'><?= $c['fonction']; ?></h2>
         <div class='partie-contact'>
         <div class='trait-bleu-contact'></div>

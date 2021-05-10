@@ -52,6 +52,24 @@ contact_fleche.addEventListener('click', function(){
  })
  
 
+ 
+ let chateau_fleche = document.querySelector('.fleche-chateau');
+ let menu_chateau = document.querySelector('.menu-chateau');
+
+ chateau_fleche.addEventListener('click', function(){
+  
+    console.log( menu_chateau.classList[1])
+    
+     if(menu_chateau.classList[1] == "displayNone"){
+         
+        menu_chateau.classList.remove('displayNone')
+         
+     }else{
+        menu_chateau.classList.add('displayNone')
+     }
+ })
+ 
+
  let editer_icon = document.querySelectorAll('.editer');
  let input_modif = document.querySelectorAll('.input-modif')
  let input_non_modif = document.querySelectorAll('.input-non-modif')

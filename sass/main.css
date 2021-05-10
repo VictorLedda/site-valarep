@@ -16,7 +16,12 @@ a {
   margin: auto;
 }
 
+body {
+  overflow: hidden;
+}
+
 .header {
+  margin: 0px;
   position: relative;
   z-index: 10;
   height: 120px;
@@ -31,11 +36,25 @@ a {
           box-shadow: -1px 7px 29px -18px #000000;
   position: fixed;
   background-color: white;
+  margin-bottom: 100px;
 }
 
 .header .logo {
   margin-left: 50px;
   margin-top: 2px;
+}
+
+.header .souligne {
+  margin-top: 2px;
+  height: 2px;
+  width: 100%;
+  background-color: #649fba;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #649fba), color-stop(50%, white));
+  background: linear-gradient(to right, #649fba 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
 }
 
 .header nav {
@@ -50,6 +69,15 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.header .menu a:hover .souligne {
+  background-position: left bottom;
+}
+
+.header .menu li:hover li {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 600px;
 }
 
 .header .menu a li {
@@ -212,6 +240,7 @@ footer {
   background-color: #414143;
   width: 100%;
   height: 130px;
+  padding-top: 30px;
 }
 
 footer nav {
@@ -292,11 +321,18 @@ footer .infos-footer .infos-facebook span {
           animation-delay: 0.3s;
 }
 
+.is-inviewport .content__to-opacity {
+  -webkit-animation: opacity 0.5s ease-in-out forwards;
+          animation: opacity 0.5s ease-in-out forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
 .is-inviewport .content__to-right {
   -webkit-animation: toRight 0.5s ease-in-out forwards;
           animation: toRight 0.5s ease-in-out forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .is-inviewport .content__to-up {
@@ -307,8 +343,26 @@ footer .infos-footer .infos-facebook span {
 .is-inviewport .content__to-scale {
   -webkit-animation: toScale 0.5s ease-in-out forwards;
           animation: toScale 0.5s ease-in-out forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes toRight {
@@ -365,7 +419,7 @@ footer .infos-footer .infos-facebook span {
 
 @-webkit-keyframes toUp {
   0% {
-    opacity: 0;
+    opacity: 0.4;
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
   }
@@ -378,7 +432,7 @@ footer .infos-footer .infos-facebook span {
 
 @keyframes toUp {
   0% {
-    opacity: 0;
+    opacity: 0.4;
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
   }
@@ -418,27 +472,29 @@ footer .infos-footer .infos-facebook span {
 .is-small-menu {
   -webkit-animation: menu 1.5s;
           animation: menu 1.5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   width: 70px;
   height: 40px;
 }
 
 .is-normal-menu {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
   height: 100px;
-  width: 120px;
+  width: 130px;
 }
 
 .is-small-header {
   -webkit-animation: header 1.5s;
           animation: header 1.5s;
   height: 80px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .is-normal-header {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
   height: 120px;
 }
 
@@ -448,7 +504,7 @@ footer .infos-footer .infos-facebook span {
   }
   to {
     height: 80px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
   }
 }
 
@@ -458,13 +514,13 @@ footer .infos-footer .infos-facebook span {
   }
   to {
     height: 80px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
   }
 }
 
 @-webkit-keyframes menu {
   from {
-    width: 120px;
+    width: 130px;
     height: 80px;
   }
   to {
@@ -475,7 +531,7 @@ footer .infos-footer .infos-facebook span {
 
 @keyframes menu {
   from {
-    width: 120px;
+    width: 130px;
     height: 80px;
   }
   to {
@@ -880,20 +936,20 @@ header .bouton-deconnexion {
   font-family: 'Architects Daughter', cursive;
 }
 
-.menu-sidebar .menu-formations, .menu-sidebar .menu-contacts, .menu-sidebar .menu-offres {
+.menu-sidebar .menu-formations, .menu-sidebar .menu-contacts, .menu-sidebar .menu-offres, .menu-sidebar .menu-chateau {
   background-color: #eeeeee;
 }
 
-.menu-sidebar .menu-formations .menu-onglet:hover, .menu-sidebar .menu-contacts .menu-onglet:hover, .menu-sidebar .menu-offres .menu-onglet:hover {
+.menu-sidebar .menu-formations .menu-onglet:hover, .menu-sidebar .menu-contacts .menu-onglet:hover, .menu-sidebar .menu-offres .menu-onglet:hover, .menu-sidebar .menu-chateau .menu-onglet:hover {
   background-color: #bdbdbd;
   cursor: pointer;
 }
 
-.menu-sidebar .menu-formations .menu-onglet, .menu-sidebar .menu-contacts .menu-onglet, .menu-sidebar .menu-offres .menu-onglet {
+.menu-sidebar .menu-formations .menu-onglet, .menu-sidebar .menu-contacts .menu-onglet, .menu-sidebar .menu-offres .menu-onglet, .menu-sidebar .menu-chateau .menu-onglet {
   height: 55px;
 }
 
-.menu-sidebar .menu-formations .menu-onglet span, .menu-sidebar .menu-contacts .menu-onglet span, .menu-sidebar .menu-offres .menu-onglet span {
+.menu-sidebar .menu-formations .menu-onglet span, .menu-sidebar .menu-contacts .menu-onglet span, .menu-sidebar .menu-offres .menu-onglet span, .menu-sidebar .menu-chateau .menu-onglet span {
   position: relative;
   top: 20px;
   padding-top: 20px;
@@ -1455,6 +1511,134 @@ header .bouton-deconnexion {
   margin-bottom: 60px;
 }
 
+.titre-toutes-offres {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.icons-update-offres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toutes-offres {
+  padding-left: 300px;
+}
+
+.toutes-offres .offres-editer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toutes-offres .offres-editer .avatar-editer {
+  width: 350px;
+  height: 250px;
+}
+
+.toutes-offres .offres-editer .offres-editer-infos {
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+}
+
+.toutes-offres .offres-editer .icon-corbeille {
+  font-family: 'Roboto', sans-serif;
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.toutes-offres .offres-editer .contact-changer-image {
+  background-color: #649fba;
+  color: white;
+  border: 1px solid #649fba;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 8px 20px 8px 20px;
+}
+
+.toutes-offres .offres-editer .contact-changer-image:hover {
+  background-color: white;
+  color: #649fba;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.bouton-supprimer {
+  display: none;
+}
+
+.input-modif {
+  position: relative;
+  top: 8px;
+}
+
+.label-corbeille {
+  font-family: 'Roboto', sans-serif;
+  color: #ec5454;
+  cursor: pointer;
+  border: 1px solid #ec5454;
+  border-radius: 8px;
+  padding: 10px 30px 10px 30px;
+}
+
+.label-corbeille:hover {
+  background-color: #ec5454;
+  color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.new-avatar-contact {
+  display: none;
+}
+
+.modifier {
+  margin-left: 500px;
+}
+
+.modif-description {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.modif-description .textarea-modif {
+  width: 500px;
+  height: 150px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modif-description .textarea-non-modif {
+  padding-top: 20px;
+}
+
 .block {
   display: block;
 }
@@ -1704,6 +1888,7 @@ header .bouton-deconnexion {
   margin: 0;
   background-image: url("../images/fond-mail.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .email .titre-email {
@@ -1755,15 +1940,20 @@ header .bouton-deconnexion {
   text-align: center;
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
+  padding-bottom: 15px;
 }
 
-.contact-pricipal {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact-pricipal {
+  padding-top: 170px;
 }
 
 .contact-pricipal .image-contact-principal {
@@ -1904,20 +2094,21 @@ header .bouton-deconnexion {
 
 .titre-offres {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
 }
 
 .offres {
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 50px;
 }
 
@@ -2011,15 +2202,18 @@ header .bouton-deconnexion {
   margin-left: 200px;
 }
 
-.titre-chateau {
-  padding-top: 70px;
-  padding-bottom: 40px;
+.test-essaye {
+  padding-top: 150px;
+}
+
+.test-essaye .titre-chateau {
+  padding-bottom: 50px;
   font-size: 30px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
-.presentation-chateau {
+.test-essaye .presentation-chateau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2029,26 +2223,26 @@ header .bouton-deconnexion {
   padding-bottom: 10px;
 }
 
-.presentation-chateau .chateau-text .sous-titre-chateau {
+.test-essaye .presentation-chateau .chateau-text .sous-titre-chateau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.presentation-chateau .chateau-text .sous-titre-chateau h2 {
+.test-essaye .presentation-chateau .chateau-text .sous-titre-chateau h2 {
   font-family: 'Roboto', sans-serif;
   position: relative;
   bottom: 10px;
 }
 
-.presentation-chateau .chateau-text .sous-titre-chateau .trait-bleu-vertical {
+.test-essaye .presentation-chateau .chateau-text .sous-titre-chateau .trait-bleu-vertical {
   height: 40px;
   width: 2px;
   margin-right: 20px;
   background-color: #649fba;
 }
 
-.presentation-chateau .chateau-text p {
+.test-essaye .presentation-chateau .chateau-text p {
   text-align: justify;
   max-width: 1000px;
   font-family: 'Athiti', sans-serif;
@@ -2260,8 +2454,10 @@ left: 180px;
 .titre-apprentissage {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: 30px;
-  margin-bottom: 50px;
+}
+
+.apprentissage {
+  padding-top: 150px;
 }
 
 .apprentissage .block-titre {
@@ -2402,22 +2598,53 @@ input[type=button]:hover {
   cursor: pointer;
 }
 
-.telecharger-documentation:hover {
-  cursor: pointer;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-  color: white;
-  background-color: #649fba;
+/*
+.telecharger-documentation:hover{
+    cursor: pointer;
+    transition-duration: 0.8s;
+    color: white;
+    background-color: #649fba;
+}
+ */
+.outer {
+  margin: 50px;
 }
 
 .telecharger-documentation {
+  border: 1px solid #649fba;
+  border-radius: 3px;
   width: 180px;
   height: 40px;
-  background: none;
-  border: 1px solid #649fba;
+  display: block;
   font-size: 20px;
   color: #649fba;
   font-family: 'Architects Daughter', cursive;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #649fba), color-stop(50%, white));
+  background: linear-gradient(to right, #649fba 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.telecharger-documentation:hover {
+  background-position: left bottom;
+  cursor: pointer;
+  color: white;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  -webkit-transition: all .6s ease-out;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;
 }
 
 .update {

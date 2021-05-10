@@ -3,17 +3,22 @@
 
 require_once('./vues/header.php');
 
-$offres = $pdo->query("SELECT * FROM offres");
+$offres = $pdo->query("SELECT * FROM offres ORDER BY id DESC");
 
 ?>
+
+
+
+<section class='offres '>
 <h2 class='titre-offres'>Nos offres d'emplois</h2>
-<section class='offres'>
+
 <?php
 while($o=$offres->fetch()){
 
     ?>
-    <div class='offre'>
-        <div class="titre-offre">
+    <div class='scroll-part is-invert'>
+    <div class='offre content__to-up '>
+        <div class="titre-offre ">
             <div class="trait-bleu"></div>
             <span><?= $o['nom']; ?></span>
         </div>
@@ -24,7 +29,7 @@ while($o=$offres->fetch()){
 
                  <div class="tel-offre">
                  <img class='image-tel-bleu' src='images/tel-bleu.PNG'/>
-                    <span><?= $o['personne']; ?></span>
+                    <span><?= $o['telephone']; ?></span>
                  </div>
                  <h4 class="personne-offre">Contacter <?= $o['personne'] ?></h4>
            </div>
@@ -38,6 +43,7 @@ while($o=$offres->fetch()){
         </div>
 
     </div>
+</div>
 
     <?php
 }

@@ -107,7 +107,7 @@ require_once('./vues/header.php');
 
 </section>
 
-<section class='notre-role container scroll-part is-invert'>
+<section class='notre-role container scroll-part is-invert content__opacity'>
  
 
 

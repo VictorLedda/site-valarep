@@ -15,13 +15,13 @@ console.log('cc');
             let header = document.querySelector('.header')
         window.addEventListener("scroll", () => {
             
-          if (window.pageYOffset > 50) {
+          if (window.pageYOffset > 150) {
             header.classList.remove("is-normal-header"); 
             logo.classList.add("is-small-menu");
             logo.classList.remove("is-normal-menu");
             header.classList.add("is-small-header");
           } 
-          if (window.pageYOffset < 50) {
+          if (window.pageYOffset < 150) {
             logo.classList.add("is-normal-menu"); 
             logo.classList.remove("is-small-menu");
             header.classList.remove("is-small-header");

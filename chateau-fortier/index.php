@@ -2,7 +2,7 @@
 include('../vues/header.php');
 
 ?>
-<section>
+<section class='test-essaye'>
 <h1 class='titre-chateau'>Le chateau fortier</h1>
 
 <div class='presentation-chateau container scroll-part is-invert'>
@@ -151,6 +151,8 @@ include('../vues/header.php');
 
 </section>
 
+
+<script src="../js/node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
 <?php
 
