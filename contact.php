@@ -58,6 +58,7 @@ while($c=$reqcontact->fetch()){
     <img class='photo-contact <?php if($c['id'] % 2 !== 0){ echo 'content__to-left';}else{ echo 'content__to-right';}?>' src='images_uploads/avatars_contacts/<?= $c['avatar']; ?>'/>
     <div class='infos-contact <?php if($c['id'] % 2 == 0){ echo 'content__to-left';}else{ echo 'content__to-right';}?>'>
         <h2 class='contact-fonction'><?= $c['fonction']; ?></h2>
+        <div class='infos-contact-portable'>
         <div class='partie-contact'>
         <div class='trait-bleu-contact'></div>
         <h3 class='nom-contact'><?= $c['nom'] ?></h3>
@@ -66,6 +67,7 @@ while($c=$reqcontact->fetch()){
         <img class='icon-contact' src='images/mail-bleu.png'/>
         <h4 class='contact-tel'><?= $c['telephone']; ?></h4>
         </div>
+</div>
 
         </div>
     </div>

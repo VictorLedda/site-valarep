@@ -1,144 +1,456 @@
-.titre-conatct{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif; 
-   padding-bottom: 15px;
-}
-.flex{
-    display: flex;
-    justify-content: center;
-}
-
-.contact-pricipal{
-    padding-top: 170px;
-
-
-    .image-contact-principal{
-        width: 650px;
-        height: 400px;
-    }
-
-    .trait-gris{
-        height: 2px;
-        border-radius: 10px;
-        width: 100%;
-        background-color: #414143;
-    }
-
-.informations-contact{
-    
-    position: relative;
-    top: 50px;
-    right: 50px;
-    width: 280px;
-    height: 280px;
-    background-color: #649fba;
-
-    .test{
-        display: flex;
-    }
-    .trait-blanc{
-        
-        height: 150px;
-        width: 1px;
-        border-radius: 10px;
-        background-color: white;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .titre-contact-principal{
-        margin-left: 25px;
-        color: white;
-        font-family: 'Roboto', sans-serif; 
-    }
-    .information-contact{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: flex;
-      
-       
-        .information-contact-titre{
-            font-family: 'Athiti', sans-serif;
-            color: white;
-            margin: 0px;
-            padding-left: 15px;
-        }
-
-    .icon{
-        width: 20px;
-        height: 20px;
-    }
-}
-}
-
-}
-
 .reverse{
     flex-direction: row-reverse;
 }
-.contact{
-    display: flex;
-    justify-content: space-between;
-    .photo-contact{
-        width: 300px;
-        height: 300px;
-        box-shadow: -120px -120px 0px -100px #649fba;
-    }
 
-    .infos-contact{
+@media screen  and (min-width: 960px ) and (max-width: 1280px){
 
-       .contact-fonction{
-           font-size: 40px;
-           font-family: 'Roboto', sans-serif; 
-           font-weight: 1500;
-       } 
-
-       .trait-bleu-contact{
-           height: 40px;
-           width: 2px;
-           background-color: #649fba;
-           margin-right: 30px;
-       }
-.partie-contact{
-
-    display: flex;
-    
-       .nom-contact{
-           font-size: 30px;
-           margin: 0px;
-           font-family: 'Roboto', sans-serif; 
-       }
-    }
-       .infos-contact{
-           display: flex;
-           padding-top: 30px;
-           padding-top: 80px;
-           .icon-contact{
-
-        
-           width: 28px;
-           height: 28px;
-         }
-
-            .contact-tel{
-           margin: 0px;
-           font-family: 'Architects Daughter', cursive;
-           margin-left: 15px;
-           
-       }
-       }
-    }
 
 
 
 
 }
+@media screen  and (min-width: 960px ){
 
-.trait-gris{
+
+    .titre-conatct{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif; 
+       padding-bottom: 15px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
     
-    width: 80%;
-    height: 2px;
-    background-color: #414143;
-    margin: 80px auto 80px auto;
+    .contact-pricipal{
+        padding-top: 170px;
     
+    
+        .image-contact-principal{
+            width: 650px;
+            height: 400px;
+        }
+    
+        .trait-gris{
+            height: 2px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: #414143;
+        }
+    
+    .informations-contact{
+        
+        position: relative;
+        top: 50px;
+        right: 50px;
+        width: 280px;
+        height: 280px;
+        background-color: #649fba;
+    
+        .test{
+            display: flex;
+        }
+        .trait-blanc{
+            
+            height: 150px;
+            width: 1px;
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .titre-contact-principal{
+            margin-left: 25px;
+            color: white;
+            font-family: 'Roboto', sans-serif; 
+        }
+        .information-contact{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+          
+           
+            .information-contact-titre{
+                font-family: 'Athiti', sans-serif;
+                color: white;
+                margin: 0px;
+                padding-left: 15px;
+            }
+    
+        .icon{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    }
+    
+    }
+    
+    
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        .photo-contact{
+            width: 300px;
+            height: 300px;
+            box-shadow: -120px -120px 0px -100px #649fba;
+        }
+    
+        .infos-contact{
+    
+           .contact-fonction{
+               font-size: 40px;
+               font-family: 'Roboto', sans-serif; 
+               font-weight: 1500;
+           } 
+    
+           .trait-bleu-contact{
+               height: 40px;
+               width: 2px;
+               background-color: #649fba;
+               margin-right: 30px;
+           }
+    .partie-contact{
+    
+        display: flex;
+        
+           .nom-contact{
+               font-size: 30px;
+               margin: 0px;
+               font-family: 'Roboto', sans-serif; 
+           }
+        }
+           .infos-contact{
+               display: flex;
+               padding-top: 30px;
+               padding-top: 80px;
+               .icon-contact{
+    
+            
+               width: 28px;
+               height: 28px;
+             }
+    
+                .contact-tel{
+               margin: 0px;
+               font-family: 'Architects Daughter', cursive;
+               margin-left: 15px;
+               
+           }
+           }
+        }
+    
+    
+    
+    
+    }
+    
+    .trait-gris{
+        
+        width: 80%;
+        height: 2px;
+        background-color: #414143;
+        margin: 80px auto 80px auto;
+        
+    }
+
+
+}
+
+@media screen  and (min-width: 480px  ) and (max-width: 959px){
+    .container{
+        width: 90%;
+    }
+
+    .titre-conatct{
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Roboto', sans-serif; 
+       padding-bottom: 15px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact-pricipal{
+        padding-top: 100px;
+    
+    
+        .image-contact-principal{
+            width: 650px;
+            height: 400px;
+        }
+    
+        .trait-gris{
+            height: 2px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: #414143;
+        }
+    
+    .informations-contact{
+        
+      
+        width: 280px;
+        height: 280px;
+        background-color: #649fba;
+    
+        .test{
+            display: flex;
+        }
+        .trait-blanc{
+            
+            height: 150px;
+            width: 1px;
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .titre-contact-principal{
+            margin-left: 25px;
+            color: white;
+            font-family: 'Roboto', sans-serif; 
+        }
+        .information-contact{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+          
+           
+            .information-contact-titre{
+                font-family: 'Athiti', sans-serif;
+                color: white;
+                margin: 0px;
+                padding-left: 15px;
+            }
+    
+        .icon{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    }
+    
+    }
+    
+    
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        .photo-contact{
+           width: 35%;
+           height: 35%;
+           box-shadow: -70px -70px 0px -50px #649fba;
+        }
+    
+        .infos-contact{
+    
+           .contact-fonction{
+               font-size: 2em;
+               font-family: 'Roboto', sans-serif; 
+               font-weight: 1500;
+           } 
+    
+           .trait-bleu-contact{
+               height: 28px;
+               width: 1px;
+               background-color: #649fba;
+               margin-right: 30px;
+           }
+    .partie-contact{
+    
+        display: flex;
+        
+           .nom-contact{
+               font-size: 15px;
+               margin: 0px;
+               font-family: 'Roboto', sans-serif; 
+           }
+        }
+           .infos-contact{
+               display: flex;
+               padding-top: 30px;
+               
+               .icon-contact{
+    
+            
+               width: 28px;
+               height: 28px;
+             }
+    
+                .contact-tel{
+               margin: 0px;
+               font-family: 'Architects Daughter', cursive;
+               margin-left: 15px;
+               
+           }
+           }
+        }
+    
+    
+    
+    
+    }
+    
+    .trait-gris{
+        
+        width: 80%;
+        height: 2px;
+        background-color: #414143;
+        margin: 80px auto 80px auto;
+        
+    }
+
+
+}
+@media screen  and (min-width: 0px  ) and (max-width: 479px ){
+.container{
+    width: 100%;
+}
+
+    .titre-conatct{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif; 
+       padding-bottom: 15px;
+    }
+   
+    
+    .contact-pricipal{
+        padding-top: 100px;
+    
+    
+        .image-contact-principal{
+            width: 100%;
+        
+        }
+    
+        .trait-gris{
+            height: 2px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: #414143;
+        }
+    
+    .informations-contact{
+        
+       margin: auto;
+        width: 280px;
+        height: 280px;
+        background-color: #649fba;
+    
+        .test{
+            display: flex;
+        }
+        .trait-blanc{
+            
+            height: 150px;
+            width: 1px;
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .titre-contact-principal{
+            margin-left: 25px;
+            color: white;
+            font-family: 'Roboto', sans-serif; 
+        }
+        .information-contact{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+          
+           
+            .information-contact-titre{
+                font-family: 'Athiti', sans-serif;
+                color: white;
+                margin: 0px;
+                padding-left: 15px;
+            }
+    
+        .icon{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    }
+    
+    }
+    
+    .infos-contact-portable{
+        
+        justify-content: space-around;
+    }
+    .contact{
+       
+     text-align:center ;
+        .photo-contact{
+            width: 72%;
+            box-shadow: -100px -100px 0px -80px #649fba;
+        }
+    
+        .infos-contact{
+    justify-content: center;
+           .contact-fonction{
+               font-size: 28px;
+               font-family: 'Roboto', sans-serif; 
+               font-weight: 1500;
+           } 
+    
+           .trait-bleu-contact{
+               height: 25px;
+               width: 1.5px;
+               background-color: #649fba;
+               margin-right: 30px;
+           }
+    .partie-contact{
+    justify-content: center;
+        display: flex;
+        
+           .nom-contact{
+            font-size: 15px;
+               margin: 0px;
+               font-family: 'Roboto', sans-serif; 
+           }
+        }
+           .infos-contact{
+               display: flex;
+               padding-top: 30px;
+               
+               .icon-contact{
+    
+            
+               width: 28px;
+               height: 28px;
+             }
+    
+                .contact-tel{
+               margin: 0px;
+               font-family: 'Architects Daughter', cursive;
+               margin-left: 15px;
+               font-size: 15px;
+               
+           }
+           }
+        }
+    
+    
+    
+    
+    }
+    
+    .trait-gris{
+        
+        width: 80%;
+        height: 0.75px;
+        background-color: #414143;
+        margin: 80px auto 80px auto;
+        
+    }
+
+
 }

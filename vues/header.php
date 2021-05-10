@@ -26,9 +26,9 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 
 
 <div>
-<header class='header is-normal-header'>
+<header class='header is-normal-header header-normal-none'>
 
-<a  href='index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
+<a  href='/valarp/index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
 
 <nav>
     <ul class='menu'>
@@ -77,4 +77,39 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 
 </header>
 
+
+
+<section class='page-header-portable displayNone animation-header-portable'>
+    <div class='container-croix-noire'>
+<img class='croix-noir' src='/valarep/images/croix-noir.PNG' />
 </div>
+    <nav>
+<ul>
+<a href='/valarep/index.php'><li>Accueil</li></a>
+<a href='/valarep/offres.php'><li>Offres</li></a>
+<a href='/valarep/formations/apprentissage.php'><li>Formations</li></a>
+<a href='/valarep/chateau-fortier/'><li>Chateau Fortier</li></a>
+<a href='/valarep/contact.php'><li>Nous contacter</li></a>
+<a href='https://valarep.fr/ent-valarep/'><li>ENT</li></a>
+<a href='https://www.valarep.fr/__ged/seeddms-6.0.14/out/out.Login.php?referuri=%2F__ged%2Fseeddms-6.0.14%2Fout%2Fout.ViewFolder.php'><li>GED</li></a>
+
+
+
+</ul>
+</nav>
+</section>
+<header class='header-portable'>
+<a  href='/valarp/index.php'><img class='logo-portable is-normal-menu' src='/valarep/images/logo-png.png' /></a>
+   <div class="menu-header-portable">
+<div class="ligne-menu"></div>
+<div class="ligne-menu"></div>
+<div class="ligne-menu"></div>
+
+    </div>
+
+</header>
+
+</div>
+
+
+<script src="/valarep/js/script.js"></script>

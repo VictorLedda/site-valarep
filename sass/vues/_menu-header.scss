@@ -1,0 +1,85 @@
+.page-header-portable{
+    overflow-y: hidden;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    
+
+    .container-croix-noire{
+        display: flex;
+        justify-content: flex-end;
+
+        .croix-noir{
+            width: 25px;
+            height: 25px;
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+        .croix-noir:hover{
+            transform: scale(1.4);
+            transform-origin: center center;
+            transition-duration: 0.8s;
+            cursor: pointer;
+        }
+    }
+    nav{
+        height: 100%;
+        margin: auto;
+        ul{
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            
+            font-family: 'Architects Daughter', cursive;
+            a{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                color: black;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.menu-header__non-visible{
+    bottom: 500px;
+}
+
+.animation-header-portable{
+    animation: headerPortable 1s ease-in-out;
+}
+
+
+@keyframes headerPortable{
+    0%{
+        bottom: 1000px;
+
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+.header-portable-reverse{
+    animation: headerPortableReverse 1s ease-in-out;
+    bottom: 1000px;
+}
+
+
+@keyframes headerPortableReverse{
+    0%{
+        bottom: 0px;
+
+    }
+    100%{
+        bottom: 1000px;
+
+    }
+}

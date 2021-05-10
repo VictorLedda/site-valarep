@@ -1,6 +1,7 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
+@media screen  and (min-width: 1281px) {
 
 .header{
     margin: 0px;
@@ -176,6 +177,8 @@ h3{
     width: 65px;
 }
 
+}
+
 
 @keyframes header-menu {
     0% {
@@ -189,3 +192,60 @@ h3{
     }
   }
 
+
+
+
+  @media screen  and (min-width: 960px ) and (max-width: 1280px){
+
+
+
+
+
+}
+
+@media screen  and (min-width: 480px  ) and (max-width: 959px){
+
+    .header-normal-none{
+        display: none;
+    }
+
+
+
+}
+@media screen  and (min-width: 0px  ) and (max-width: 479px ){
+
+.header-normal-none{
+    display: none;
+}
+
+.header-portable{
+   
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    .logo-portable{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 75px;
+        height: 65px;
+    }
+    .menu-header-portable{
+        margin-top: 12px;
+        margin-right: 12px;
+        width: 50px;
+        height: 50px;
+        .ligne-menu{
+            background-color: #414143;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            height: 5px;
+            width: 100%;
+        }
+    }
+}
+
+
+
+}

@@ -1,7 +1,7 @@
 <footer>
 <div class='container'>
 <nav>
-    <ul class='menu'>
+    <ul class='menu footer-displayNone'>
         <a  href='index.php'><li>Accueil</li></a>
        <a href='offres.php'> <li>Nos offres</li></a>
        <a href='index.php'>  <li>Nos formations</li></a>
@@ -15,7 +15,7 @@
 
 </div>
 
-<div class='trait-gris'></div>
+<div class='trait-gris footer-displayNone'></div>
 
 <div class='container infos-footer'>
     <div class='infos-facebook'>
@@ -27,5 +27,5 @@
 </footer>
 
 <script src="/valarep/js/gsap.js"></script>
-
 <script src="/valarep/js/animations.js"></script>
+<script src="/valarep/js/responsive.js"></script>
