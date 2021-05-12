@@ -1,4 +1,5 @@
-
+@media screen  and (min-width: 960px ){
+    
 
 .titre-apprentissage{
     text-align: center;
@@ -37,6 +38,8 @@ padding-top: 150px;
 .formation{
     width: 30%;
     padding-top: 20px;
+   padding-right: 3px;
+   padding-left: 3px;
     
     .image-formation{
         width: 400px;
@@ -54,4 +57,77 @@ padding-top: 150px;
     }
 }
 
+}
+}
+
+@media screen  and (min-width: 0px ) and (max-width: 959px){
+.titre-genre-formation{
+    margin-left: 30px;
+}
+    .titre-apprentissage{
+        text-align: center;
+        font-family: 'Roboto', sans-serif; 
+       
+        
+    }
+    .apprentissage{
+    padding-top: 150px;
+    margin: auto;
+    
+    justify-content: center;
+    
+    .block-titre{
+        display: flex;
+        padding-bottom: 30px;
+    
+        .icon-titre{
+            padding-top: 18px;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    
+        .titre-genre-formation{
+            padding: 8px 30px 8px 30px;
+            border: 1px solid #649fba;
+            font-family: 'Roboto', sans-serif; 
+            font-size: 12px;
+            box-shadow: -5px -5px 0px 0px #f4f4f4;
+        }
+    }
+    
+    }
+    .formations{
+        display: flex;
+        flex-direction: column;
+       
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+       
+    .formation{
+        
+        margin: auto;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+        .image-formation{
+            width: 100%;
+        }
+        .trait-bleu-horizontal{
+            background-color: #649fba;
+            margin-top: 10px;
+            height: 2px;
+            width: 40px;
+        }
+        h4{
+            max-width: 500px;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif; 
+        }
+    }
+    
+    }
 }

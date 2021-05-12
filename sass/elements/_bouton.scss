@@ -22,14 +22,10 @@ input[type=button]:hover{
 .outer {
     margin: 50px;
   }
-  
-  .telecharger-documentation {
+  .telecharger-documentation, .lycee-dampierre-button {
     border: 1px solid #649fba;
     border-radius: 3px;
-    width: 180px;
-    height: 40px;
     display: block;
-    font-size: 20px;
     color: #649fba;
     font-family: 'Architects Daughter', cursive;
     background: linear-gradient(to right, #649fba 50%, white 50%);
@@ -39,6 +35,29 @@ input[type=button]:hover{
   }
   
   .telecharger-documentation:hover {
+    background-position: left bottom;
+    cursor: pointer;
+    color: white;
+  }
+  @media screen  and (min-width: 960px ){
+    .telecharger-documentation {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    }
+  
+}
+@media screen  and (min-width: 0px ) and (max-width: 959px){
+    .telecharger-documentation {
+        width: 140px;
+        height: 35px;
+        font-size: 15px;
+        }
+
+
+}
+
+  .lycee-dampierre-button:hover{
     background-position: left bottom;
     cursor: pointer;
     color: white;

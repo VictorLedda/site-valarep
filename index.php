@@ -18,7 +18,7 @@ require_once('./vues/header.php');
 
 <div class='toutes-les-formations scroll-part is-invert'>
 
-<div>
+<div class='formation'>
 
     <div class='formations-infos content__to-scale'>
 
@@ -45,7 +45,7 @@ require_once('./vues/header.php');
 </div>
 </div>
 
-<div>
+<div class='formation'>
 
     <div class='formations-infos content__to-scale'>
 
@@ -73,7 +73,7 @@ require_once('./vues/header.php');
 </div>
 
 
-<div>
+<div class='formation'>
 
     <div class='formations-infos content__to-scale'>
 
@@ -165,7 +165,7 @@ standard dummy text ever since the 1500s.</p>
 <img class='logo-partenaire' src='images/valenciennes-métropole.jpg'/>
 </div>
 
-    <div class='contenu-notre-role content__to-left'>
+    <div class='contenu-nos-partenaires content__to-left'>
     <h3 class='notre-role-titre'>Nos partenaires</h3>
     <div class='trait-bleu'></div>
     <p>Lorem Ipsum is simply dummy text of the printing and

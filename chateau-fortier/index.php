@@ -174,7 +174,7 @@ require_once('../vues/footer.php');
   type: 'carousel',
   startAt: 0,
   autoplay: "2000",
-  perView: 3
+  perView: 4
 }).mount()
 
 </script>

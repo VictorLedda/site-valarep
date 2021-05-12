@@ -170,7 +170,7 @@ margin: auto;
         display: flex;
         
 .glide__slide{
-    border: 1px solid #649fba;
+    
     
     text-align: center;
     
@@ -190,7 +190,7 @@ margin: auto;
         transform: rotate(1.5deg);
     }
     .image-slide{
-        
+        box-shadow: 1px -1px 39px -16px rgba(0,0,0,0.75);
         margin: 40px auto 0px auto;
         width: 80%;
         height: 190px;
@@ -237,9 +237,9 @@ margin: auto;
         margin-right: 10px;
         margin-left: 10px;
         border: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 1000px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     border: 1px solid #649fba;
     background: transparent;
 }

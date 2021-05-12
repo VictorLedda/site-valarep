@@ -1,95 +1,291 @@
-.titre-offres{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-}
 
 
-.offres{
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-
+@media screen  and (min-width: 1280px ){
+    .container{
+  
+        width: 90%;
+    }
     .offre{
-        border: 2px solid #649fba;
         width: 80%;
         height: 320px;
-        margin: 50px auto 0px auto;
-        box-shadow: 0px 0px 10px -7px #000000;
-
-        .titre-offre{
-            display: flex;
-            .trait-bleu{
-                height: 30px;
-                background-color: #649fba;
-                width: 2px;
-            }
-            margin-top: 25px;
-            margin-left: 25px;
-            display: flex;
-            
-            span{
-                margin-left: 15px;
-                font-size: 30px;
-                font-family: 'Roboto', sans-serif;
-            }
-        }
-    .contenu-offre{
-    display: flex;
+    }
+}
+@media screen  and (min-width: 960px ) and (max-width: 1280px) {
+    .offre{
+        width: 95%;
+        height: 350px;
+    }
+}
+@media screen  and (min-width: 960px ) {
+    .titre-offres{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
     
-            .paragraphe-offre{
-                font-size: 17px;
-                font-family: 'Athiti', sans-serif;
-                margin-left: 25px;
-                margin-top: 25px;
-                width: 90%;
-                text-align: justify;
-            }
-            .informations-offre{
+    
+    .offres{
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    
+        .offre{
+            border: 2px solid #649fba;
+            
+            margin: 50px auto 0px auto;
+            box-shadow: 0px 0px 10px -7px #000000;
+    
+            .titre-offre{
                 display: flex;
-                margin-left: 100px;
-                .tel-offre{
-                    span{
-                        
-                        margin-left: 20px;
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 20px;
-                    }
-                    .image-tel-bleu{
-                        width: 30px;
-                    }
+                .trait-bleu{
+                    height: 30px;
+                    background-color: #649fba;
+                    width: 2px;
                 }
-                .personne-offre{
-                    position: relative;
-                        bottom: 17px;
-                    margin-left: 120px;
-                    font-family: 'Roboto', sans-serif;
-                        font-size: 20px;
-
-                }
+                margin-top: 25px;
+                margin-left: 25px;
+                display: flex;
                 
+                span{
+                    margin-left: 15px;
+                    font-size: 30px;
+                    font-family: 'Roboto', sans-serif;
+                }
             }
-            .genre-offre{
-                    margin-right: 30px;
-                    .image-genre-offre{
-                        width: 280px;
-                        max-height: 190px;
+        .contenu-offre{
+        display: flex;
+        
+                .paragraphe-offre{
+                    font-size: 17px;
+                    font-family: 'Athiti', sans-serif;
+                    margin-left: 25px;
+                    margin-top: 25px;
+                    width: 90%;
+                    text-align: justify;
+                }
+                .informations-offre{
+                    display: flex;
+                    margin-left: 100px;
+                    .tel-offre{
+                        span{
+                            
+                            margin-left: 20px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+                        }
+                        .image-tel-bleu{
+                            width: 30px;
+                        }
                     }
-                    h4{
+                    .personne-offre{
                         position: relative;
-                        bottom: 20px;
-                        font-size: 25px;
+                            bottom: 17px;
+                        margin-left: 120px;
                         font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+    
                     }
+                    
+                }
+                .genre-offre{
+                        margin-right: 30px;
+                        .image-genre-offre{
+                            width: 280px;
+                            max-height: 190px;
+                        }
+                        h4{
+                            position: relative;
+                            bottom: 20px;
+                            font-size: 25px;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                }
+    
+    
             }
-
-
-        }
-        }
-
+            }
+    
+    }
+    
 }
 
+@media screen  and (min-width: 0px ) and (max-width: 959px) {
+    .titre-offres{
+        text-align: center;
+       
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    .offres{
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    
+        .offre{
+            border: 2px solid #649fba;
+           
+           
+            margin: 50px auto 0px auto;
+            box-shadow: 0px 0px 10px -7px #000000;
+    
+            .titre-offre{
+                display: flex;
+                .trait-bleu{
+                    height: 30px;
+                    background-color: #649fba;
+                    width: 2px;
+                }
+                margin-top: 25px;
+                margin-left: 25px;
+                display: flex;
+                
+                span{
+                    margin-left: 15px;
+                    font-size: 30px;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+        .contenu-offre{
+        display: flex;
+        flex-direction: column-reverse;
+        
+                .paragraphe-offre{
+                    font-size: 17px;
+                    font-family: 'Athiti', sans-serif;
+                    margin-left: 25px;
+                    margin-top: 25px;
+                    width: 90%;
+                    text-align: justify;
+                }
+                .informations-offre{
+                   
+                    .tel-offre{
+                        span{
+                            
+                            margin-left: 20px;
+                            font-family: 'Roboto', sans-serif;
+                           
+                        }
+                        
+                    }
+                    .personne-offre{
+                        position: relative;
+                            bottom: 17px;
+                       
+                        font-family: 'Roboto', sans-serif;
+                           
+    
+                    }
+                    
+                }
+              
+    
+    
+            }
+            }
+    
+    }
+    
+}
+
+@media screen  and (min-width: 480px ) and (max-width: 959px){
+    .titre-offres{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+    }
+    .offre{
+        width: 95%;
+    }
+    .container{
+  
+        width: 95%;
+    }
+    .personne-offre{
+font-size: 20px;
+    }
+    .tel-offre{
+        span{
+            
+            
+            font-size: 20px;
+        }
+    }
+    .genre-offre{
+        margin: 25px auto 0px auto;
+        text-align: center;
+         .image-genre-offre{
+             width: 380px;
+             max-height: 240px;
+         }
+         h4{
+             position: relative;
+             bottom: 20px;
+             font-size: 25px;
+             font-family: 'Roboto', sans-serif;
+         }
+ }
+ .image-tel-bleu{
+    width: 30px;
+}
+ .informations-offre{
+    display: flex;
+    justify-content: space-around;
+ }
+}
+
+@media screen  and (min-width: 0px ) and (max-width: 479px){
+    .titre-offres{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .image-tel-bleu{
+        width: 25px;
+        position: relative;
+        top: 10px;
+    }
+    .tel-offre{
+        span{
+         font-size: 15px;
+        }
+    }
+    .personne-offre{
+        font-size: 15px;
+        padding-top: 20px;
+            }
+    .container{
+  
+        width: 100%;
+    }
+    .offre{
+        width: 96%;
+    }
+    .genre-offre{
+        margin: 25px auto 0px auto;
+        text-align: center;
+         .image-genre-offre{
+            width: 100%;
+         }
+         h4{
+             position: relative;
+             bottom: 20px;
+             font-size: 25px;
+             font-family: 'Roboto', sans-serif;
+         }
+ }
+
+ .informations-offre{
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+}

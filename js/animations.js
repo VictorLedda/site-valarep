@@ -13,6 +13,7 @@ console.log('cc');
     menuOnScroll(){
             let logo = document.querySelector('.logo')
             let header = document.querySelector('.header')
+            let souligne = document.querySelectorAll('.souligne')
         window.addEventListener("scroll", () => {
             
           if (window.pageYOffset > 150) {
@@ -20,11 +21,19 @@ console.log('cc');
             logo.classList.add("is-small-menu");
             logo.classList.remove("is-normal-menu");
             header.classList.add("is-small-header");
+
+            for( let i =0; i< souligne.length; i++){
+            souligne[i].classList.add("opacity95");
+            }
           } 
           if (window.pageYOffset < 150) {
             logo.classList.add("is-normal-menu"); 
             logo.classList.remove("is-small-menu");
             header.classList.remove("is-small-header");
+            for( let i =0; i< souligne.length; i++){
+              souligne[i].classList.remove("opacity95");
+              }
+          
           }
         });
     }
