@@ -63,7 +63,7 @@
 
 <div class='onlets-sidebar'>
 <div class='sidebar-part'>
-<img class='icon ' src='/valarep/images/icon-offre-blanc.png'/>
+<img class='icon ' src='/valarep/images/chateau.png'/>
 <h4 class='nom-onglets'>Chateau Fortier</h4>
 </div>
 <img class='fleche fleche-chateau' src='/valarep/images/fleche.png'/>

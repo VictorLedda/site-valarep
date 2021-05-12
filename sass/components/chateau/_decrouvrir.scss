@@ -170,8 +170,8 @@ margin: auto;
         display: flex;
         
 .glide__slide{
-    
-    
+  
+    padding-right: 20px;
     text-align: center;
     
     width: 1000px;
@@ -209,7 +209,9 @@ margin: auto;
     width: 100%;
 }
 .glide__arrows{
-   
+   position: relative;
+   top: 200px;
+   z-index: 20;
     display: flex;
     justify-content: space-between;
 
@@ -237,9 +239,9 @@ margin: auto;
         margin-right: 10px;
         margin-left: 10px;
         border: none;
-    width: 10px;
+   
     height: 10px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid #649fba;
     background: transparent;
 }

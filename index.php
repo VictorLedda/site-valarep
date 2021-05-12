@@ -6,7 +6,7 @@ require_once('./vues/header.php');
 
 ?>
 
-<section class='banniere container'>
+<section class='banniere'>
 <h1>Valarep</h1>
 <div class='trait-gris'></div>
 <h4>Valarep votre partenaire formation</h4>

@@ -1,0 +1,56 @@
+.ajout-image{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ajout-image-chateau{
+  
+width: 100%;
+margin: auto;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+
+.titre-ajout-image{
+    margin: 0px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.img-ajout-image-chateau{
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+.label-ajout-image-chateau:hover .img-ajout-image-chateau{
+    filter: brightness(70%);
+transform-origin: center center;
+cursor: pointer;
+transition-duration: 1s;
+transform: scale(1.3);
+}
+.label-ajout-image-chateau{
+    overflow: hidden;
+    width: 600px;
+    height: 350px;
+}
+
+.form-ajout-image{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-image{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+}

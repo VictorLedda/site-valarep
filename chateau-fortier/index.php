@@ -1,6 +1,8 @@
 <?php
 include('../vues/header.php');
 
+$reqImages = $pdo->query("SELECT * FROM chateau");
+
 ?>
 <section class='test-essaye'>
 <h1 class='titre-chateau'>Le chateau fortier</h1>
@@ -41,50 +43,34 @@ include('../vues/header.php');
   </div>
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides__perso">
+  <?php  while($i=$reqImages->fetch()){
+     
+    if($i['id'] %4 == 0){
+      $rotate = 'rotate1';
+    }
+    if($i['id']%4 == 1){
+      $rotate = 'rotate2';
+    }
+    if($i['id']%4 == 2){
+      $rotate = 'rotate3';
+    }
+    if($i['id']%4 == 3){
+      $rotate = 'rotate4';
+    }
+    ?>
+    
       <li class="glide__slide slide-taille " >
           <div>
            <!--   <img class='schotch' src='/valarep/images/schotch.PNG' />-->
-          <img class='rotate1 image-slide' src='/valarep/images/chateau-fortier/photo1.jpg'/>
+          <img class='<?= $rotate  ?> image-slide' src='/valarep/images_uploads/chateau-fortier/<?= $i['image']; ?>'/>
        
         </div>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
+          <p class='paragraphe-image'><?=  $i['description'];  ?></p>
         </li>
-
-      <li class="glide__slide slide-taille ">
-          <img class='rotate2  image-slide' src='/valarep/images/chateau-fortier/photo2.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-
-      <li class="glide__slide slide-taille ">
-          <img class='rotate3  image-slide' src='/valarep/images/chateau-fortier/photo3.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-      <li class="glide__slide slide-taille ">
-          <img class='rotate4  image-slide' src='/valarep/images/chateau-fortier/photo4.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-        <li class="glide__slide slide-taille " >
-          <img class='rotate1  image-slide' src='/valarep/images/chateau-fortier/photo5.jpg'/>
-        <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-
-      <li class="glide__slide slide-taille ">
-          <img class='rotate2  image-slide' src='/valarep/images/chateau-fortier/photo6.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-
-      <li class="glide__slide slide-taille ">
-          <img class='rotate3  image-slide' src='/valarep/images/chateau-fortier/photo7.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-      <li class="glide__slide slide-taille ">
-          <img class='rotate4  image-slide' src='/valarep/images/chateau-fortier/photo8.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
-        <li class="glide__slide slide-taille ">
-          <img class='rotate1  image-slide' src='/valarep/images/chateau-fortier/photo9.jpg'/>
-          <p class='paragraphe-image'>Lorem Ipsum is simply dummy</p>
-        </li>
+<?php
+  }
+  ?>
+     
      
 
     </ul>
@@ -173,8 +159,8 @@ require_once('../vues/footer.php');
     
   type: 'carousel',
   startAt: 0,
-  autoplay: "2000",
-  perView: 4
+  autoplay: "3000",
+  perView: 4.1
 }).mount()
 
 </script>
