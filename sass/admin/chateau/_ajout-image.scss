@@ -54,3 +54,51 @@ transform: scale(1.3);
     font-size: 20px;
 }
 }
+
+.titre-editer-photos-chateau{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.supp-photos-chateau{
+    padding-left: 300px;
+
+
+
+.trait-gris-supprimer-image{
+    margin: auto;
+    width: 80%;
+    height: 1px;
+    background-color: #414143;
+}
+.supp-photo-chateau{
+    display: flex;
+    justify-content: space-around;
+
+
+  
+    .img-supp-photo{
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 350px;
+        max-height: 250px;
+    }
+
+}
+
+
+}
+
+
+.labels-update{
+    height: 200px;
+   
+    .label-icon-check{
+        position: relative;
+        top: 50px;
+    }
+}
+

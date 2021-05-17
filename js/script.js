@@ -19,6 +19,26 @@ formations_fleche.addEventListener('click', function(){
     }
 })
 
+
+let home_fleche = document.querySelector('.fleche-home');
+let menu_home = document.querySelector('.menu-home');
+
+
+
+
+home_fleche.addEventListener('click', function(){
+  
+    console.log( menu_formations.classList[1])
+    
+     if(menu_home.classList[1] == "displayNone"){
+         
+        menu_home.classList.remove('displayNone')
+         
+     }else{
+        menu_home.classList.add('displayNone')
+     }
+ })
+
 let contact_fleche = document.querySelector('.fleche-contacts');
 let menu_contacts = document.querySelector('.menu-contacts');
 

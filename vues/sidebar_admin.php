@@ -6,12 +6,25 @@
 <a href="/valarep/admin/index.php"><div class='onlets-sidebar'>
 
 <div class='sidebar-part'>
-<img class='icon' src='/valarep/images/icon-home-blanc.png'/>
+<img class='icon ' src='/valarep/images/icon-home-blanc.png'/>
 <h4 class='nom-onglets'>Accueil</h4>
 </div>
-<img class='fleche' src='/valarep/images/fleche.png'/>
+<img class='fleche ' src='/valarep/images/fleche.png'/>
 </div></a>
 
+<div class='onlets-sidebar'>
+<div class='sidebar-part'>
+<img class='icon ' src='/valarep/images/icon-home-blanc.png'/>
+<h4 class='nom-onglets'>Home Page</h4>
+</div>
+<img class='fleche fleche-home' src='/valarep/images/fleche.png'/>
+</div>
+<div class="menu-sidebar">
+<div class="menu-home displayNone">
+<a href='/valarep/admin/home/'><div class="menu-offres-toutes menu-onglet"><span>Editer informations</span></div></a>
+<a href='/valarep/admin/home/partenaires.php'><div class="menu-ajout-offres menu-onglet"><span>Editer partenaires</span></div></a>
+</div>
+</div>
 
 <div class='onlets-sidebar'>
 
@@ -44,6 +57,7 @@
 
 </div>
 </div>
+
 
 
 <div class='onlets-sidebar'>

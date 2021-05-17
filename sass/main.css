@@ -1186,20 +1186,20 @@ header .bouton-deconnexion {
   font-family: 'Architects Daughter', cursive;
 }
 
-.menu-sidebar .menu-formations, .menu-sidebar .menu-contacts, .menu-sidebar .menu-offres, .menu-sidebar .menu-chateau {
+.menu-sidebar .menu-formations, .menu-sidebar .menu-contacts, .menu-sidebar .menu-offres, .menu-sidebar .menu-chateau, .menu-sidebar .menu-home {
   background-color: #eeeeee;
 }
 
-.menu-sidebar .menu-formations .menu-onglet:hover, .menu-sidebar .menu-contacts .menu-onglet:hover, .menu-sidebar .menu-offres .menu-onglet:hover, .menu-sidebar .menu-chateau .menu-onglet:hover {
+.menu-sidebar .menu-formations .menu-onglet:hover, .menu-sidebar .menu-contacts .menu-onglet:hover, .menu-sidebar .menu-offres .menu-onglet:hover, .menu-sidebar .menu-chateau .menu-onglet:hover, .menu-sidebar .menu-home .menu-onglet:hover {
   background-color: #bdbdbd;
   cursor: pointer;
 }
 
-.menu-sidebar .menu-formations .menu-onglet, .menu-sidebar .menu-contacts .menu-onglet, .menu-sidebar .menu-offres .menu-onglet, .menu-sidebar .menu-chateau .menu-onglet {
+.menu-sidebar .menu-formations .menu-onglet, .menu-sidebar .menu-contacts .menu-onglet, .menu-sidebar .menu-offres .menu-onglet, .menu-sidebar .menu-chateau .menu-onglet, .menu-sidebar .menu-home .menu-onglet {
   height: 55px;
 }
 
-.menu-sidebar .menu-formations .menu-onglet span, .menu-sidebar .menu-contacts .menu-onglet span, .menu-sidebar .menu-offres .menu-onglet span, .menu-sidebar .menu-chateau .menu-onglet span {
+.menu-sidebar .menu-formations .menu-onglet span, .menu-sidebar .menu-contacts .menu-onglet span, .menu-sidebar .menu-offres .menu-onglet span, .menu-sidebar .menu-chateau .menu-onglet span, .menu-sidebar .menu-home .menu-onglet span {
   position: relative;
   top: 20px;
   padding-top: 20px;
@@ -1961,6 +1961,172 @@ header .bouton-deconnexion {
   width: 300px;
   margin-top: 20px;
   font-size: 20px;
+}
+
+.titre-editer-photos-chateau {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.supp-photos-chateau {
+  padding-left: 300px;
+}
+
+.supp-photos-chateau .trait-gris-supprimer-image {
+  margin: auto;
+  width: 80%;
+  height: 1px;
+  background-color: #414143;
+}
+
+.supp-photos-chateau .supp-photo-chateau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.supp-photos-chateau .supp-photo-chateau .img-supp-photo {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 350px;
+  max-height: 250px;
+}
+
+.labels-update {
+  height: 200px;
+}
+
+.labels-update .label-icon-check {
+  position: relative;
+  top: 50px;
+}
+
+.block {
+  display: block;
+}
+
+.editer-informations-principales {
+  padding-left: 300px;
+  margin: auto;
+  padding-top: 1px;
+}
+
+.editer-informations-principales .trait-gris {
+  width: 80%;
+  height: 1px;
+  margin: auto;
+  background-color: #414143;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.editer-informations-principales .titre-editer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editer-informations-principales .section-formations {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.editer-informations-principales .section-formations .trait-bleu {
+  height: 20px;
+  width: 1px;
+  background-color: #649fba;
+  margin-right: 5px;
+}
+
+.editer-informations-principales .section-formations h3 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editer-informations-principales .section-formations .titre-formation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.editer-informations-principales .section-formations .titre-formation span {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editer-informations-principales .section-formations textarea {
+  font-family: 'Athiti', sans-serif;
+  width: 600px;
+  height: 150px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.editer-informations-principales .titre-notre-role {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editer-informations-principales .notre-role {
+  width: 100%;
+}
+
+.editer-informations-principales .notre-role .contenu-notre-role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.editer-informations-principales .notre-role .contenu-notre-role .img-role {
+  width: 400px;
+}
+
+.editer-informations-principales .notre-role .contenu-notre-role .text-notre-role {
+  font-family: 'Athiti', sans-serif;
+  width: 500px;
+  height: 150px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.editer-informations-principales .titre-lycee-dampierre {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editer-informations-principales .lycee-dampierre {
+  margin: auto;
+}
+
+.editer-informations-principales .lycee-dampierre .contenu-lycee-dampierre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.editer-informations-principales .lycee-dampierre .contenu-lycee-dampierre .img-dampierre {
+  width: 400px;
 }
 
 @media screen and (min-width: 960px) {
@@ -3864,6 +4030,10 @@ left: 180px;
   height: 40px;
   font-size: 16px;
   margin-bottom: 60px;
+}
+
+.font-Architects {
+  font-family: 'Architects Daughter', cursive;
 }
 
 input[type=button]:hover {

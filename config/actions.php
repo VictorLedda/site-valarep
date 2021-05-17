@@ -16,5 +16,6 @@ $listeDesActions = array(
     "editer-formations" => "../traitements/editer-formations.php",
     "editer-offres" => "../traitements/editer-offre.php",
     "supp-offre" => "../traitements/supprimer-offre.php",
-    "image-chateau" => "../traitements/ajout-image-chateau.php"
+    "image-chateau" => "../traitements/ajout-image-chateau.php",
+    "editer-photo-chateau" => "../traitements/editer-photo-chateau.php"
 );

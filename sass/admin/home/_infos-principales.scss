@@ -1,0 +1,110 @@
+.block{
+    display: block;
+}
+
+.editer-informations-principales{
+    padding-left: 300px;
+    margin: auto;
+    padding-top: 1px;
+  
+
+    .trait-gris{
+        width: 80%;
+        height: 1px;
+        margin: auto;
+        background-color: #414143;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .titre-editer{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .section-formations{
+        margin: auto;
+        justify-content: center;
+      
+       width: 100%;
+        padding-left: 30px;
+        .trait-bleu{
+            height: 20px;
+            width: 1px;
+            background-color: #649fba;
+            margin-right: 5px;
+        }
+        h3{
+            
+            font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        }
+        .titre-formation{
+display: flex;
+
+padding-bottom: 10px;
+padding-top: 30px;
+        span{
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    }
+        textarea{
+            font-family: 'Athiti', sans-serif;
+            width: 600px;
+            height: 150px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+    
+    }
+
+
+    .titre-notre-role{
+
+        text-align: center;
+        font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    }
+    .notre-role{
+width: 100%;
+        
+
+        .contenu-notre-role{
+display: flex;
+justify-content: space-between;
+            .img-role{
+                width: 400px;
+            }
+            .text-notre-role{
+                font-family: 'Athiti', sans-serif;
+                width: 500px;
+                height: 150px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+    .titre-lycee-dampierre{
+            text-align: center;
+        font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    }
+    .lycee-dampierre{
+      margin: auto;
+
+      .contenu-lycee-dampierre{
+          display: flex;
+          justify-content: space-around;
+          .img-dampierre{
+              width: 400px;
+          }
+      }
+    }
+}
