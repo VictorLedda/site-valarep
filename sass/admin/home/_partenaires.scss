@@ -1,0 +1,98 @@
+.section-partenaires{
+    padding-top: 1px;
+    padding-left: 300px;
+
+margin: auto;
+    .titre-partenaires{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .text-partenaires{
+        margin: auto;
+text-align: center;
+h4{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+        textarea{
+            width: 600px;
+            height: 150px;
+            font-family: 'Athiti', sans-serif;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+    .ajout-logo{
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        h4{
+            text-align: center;
+            font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+        }
+        .zone-nouveau-logo:hover{
+            cursor: pointer;
+        }
+        .zone-nouveau-logo{
+            margin: auto;
+            width: 230px;
+            height: 230px;
+overflow: hidden;
+            .new-logo{
+                
+              
+            }
+            .new-logo:hover{
+                transform: scale(1.3);
+                transition-duration: 1s;
+            }
+        }
+    }
+
+    .logos-partenaires{
+        padding-top: 100px;
+        width: 60%;
+       
+        margin: auto;
+        h4{
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+        }
+
+        
+.partenaire{
+    height: 220px;
+    
+
+        .logo-partenaires{
+          
+            width: 150px;
+
+        }
+        .logo-contenu{
+            display: flex;
+            justify-content: space-around;
+            align-items: middle;
+
+            .label-corbeille{
+                position: relative;
+                bottom: 70px;
+            }
+        }
+        .trait-partenaire{
+            
+            margin: 20px auto 0px auto;
+            height: 1px;
+            background-color: #414143;
+        }
+    }
+
+
+}
+}

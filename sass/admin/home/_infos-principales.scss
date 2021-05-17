@@ -1,3 +1,11 @@
+
+header{
+    .update{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
 .block{
     display: block;
 }
@@ -6,6 +14,7 @@
     padding-left: 300px;
     margin: auto;
     padding-top: 1px;
+    width: 100vh;
   
 
     .trait-gris{
@@ -30,6 +39,11 @@
       
        width: 100%;
         padding-left: 30px;
+
+        .block-formation{
+            margin: auto;
+           justify-content: center;
+        }
         .trait-bleu{
             height: 20px;
             width: 1px;
@@ -72,16 +86,23 @@ padding-top: 30px;
     font-family: 'Roboto', sans-serif;
     }
     .notre-role{
-width: 100%;
+
         
 
         .contenu-notre-role{
-display: flex;
-justify-content: space-between;
+            margin: auto;
+            width: 100%;
+              display: flex;
+              justify-content: space-around;
             .img-role{
                 width: 400px;
+                margin-right: 200px;
             }
-            .text-notre-role{
+            .text-role{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            .textarea-role{
                 font-family: 'Athiti', sans-serif;
                 width: 500px;
                 height: 150px;
@@ -91,20 +112,37 @@ justify-content: space-between;
             }
         }
     }
+    }
     .titre-lycee-dampierre{
             text-align: center;
         font-size: 30px;
     font-family: 'Roboto', sans-serif;
     }
     .lycee-dampierre{
-      margin: auto;
+      padding-bottom: 200px;
 
       .contenu-lycee-dampierre{
+        margin: auto;
+        width: 100%;
           display: flex;
           justify-content: space-around;
           .img-dampierre{
               width: 400px;
+              margin-right: 200px;
           }
+          .text-dampierre{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+          .textarea-dampierre{
+            font-family: 'Athiti', sans-serif;
+            width: 500px;
+            height: 150px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
       }
+    }
     }
 }

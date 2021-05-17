@@ -2,7 +2,8 @@
 
 
 require_once('./vues/header.php');
-
+$home = $pdo->query("SELECT * FROM home");
+$h = $home->fetch();
 
 ?>
 
@@ -30,18 +31,7 @@ require_once('./vues/header.php');
         <img class='icon' src='images/icon-pc-bleu.png'/>
 </div>
 
-    <p>Lorem Ipsum is simply dummy text 
-    of the printing and typesetting 
-    industry. Lorem Ipsum has been 
-    the industry's standard dummy 
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.</p>
+    <p><?= $h['TextInformatique'];  ?></p>
 </div>
 </div>
 
@@ -54,21 +44,10 @@ require_once('./vues/header.php');
                 <h3>Bâtiments et industries</h3>
                 <div class='trait-bleu'></div>
             </div>      
-        <img class='icon' src='images/icon-pc-bleu.png'/>
+        <img class='icon' src='images/immeuble-bleu.png'/>
 </div>
 
-    <p>Lorem Ipsum is simply dummy text 
-    of the printing and typesetting 
-    industry. Lorem Ipsum has been 
-    the industry's standard dummy 
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.</p>
+    <p><?= $h['TextBatiments'];  ?></p>
 </div>
 </div>
 
@@ -82,21 +61,10 @@ require_once('./vues/header.php');
                 <h3>Restauration</h3>
                 <div class='trait-bleu'></div>
             </div>      
-        <img class='icon' src='images/icon-pc-bleu.png'/>
+        <img class='icon' src='images/assiette-bleu.png'/>
 </div>
 
-    <p>Lorem Ipsum is simply dummy text 
-    of the printing and typesetting 
-    industry. Lorem Ipsum has been 
-    the industry's standard dummy 
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.
-    text ever since the 1500s, when an 
-    unknown printer took a galley of 
-    type and scrambled it to make a 
-    type specimen book.</p>
+    <p><?= $h['TextRestauration'];  ?></p>
 </div>
 </div>
 
@@ -111,21 +79,12 @@ require_once('./vues/header.php');
  
 
 
-<img class='photo-role content__to-right' src='images/role.jpg'/>
+<img class='photo-role content__to-right' src='/valarep/images_uploads/home/<?= $h['ImgRole'];  ?>'/>
 
     <div class='contenu-notre-role content__to-left'>
     <h3 class='notre-role-titre'>Notre rôle</h3>
     <div class='trait-bleu'></div>
-    <p>Lorem Ipsum is simply dummy text of the printing and
-typesetting industry. Lorem Ipsum has been the industry's 
-standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it 
-to make a type specimen book. It has survived not only 
-five centuries.Lorem Ipsum has been the industry's 
-standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it 
-to make a type specimen book. It has survived not only 
-five centuries.</p>
+    <p><?= $h['TextRole'];  ?></p>
     </div>
 
 </section>
@@ -134,19 +93,13 @@ five centuries.</p>
 <div class='contenu-notre-role content__to-right'>
     <h3 class='notre-role-titre'>Le lycée Dampierre </h3>
     <div class='trait-bleu'></div>
-    <p>Lorem Ipsum is simply dummy text of the printing and
-typesetting industry. Lorem Ipsum has been the industry's 
-standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it 
-to make a type specimen book. It has survived not only 
-five centuries.Lorem Ipsum has been the industry's 
-standard dummy text ever since the 1500s.</p>
+    <p><?= $h['TextDampierre'];  ?>.</p>
 
 <button class='lycee-dampierre-button'>Aller sur le site</button>
 
     </div>
 
-<img class='photo-dampierre content__to-left' src='images/dampierre.jpg'/>
+<img class='photo-dampierre content__to-left' src='/valarep/images_uploads/home/<?= $h['ImgDampierre'];  ?>'/>
 
     
 

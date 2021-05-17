@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['id'])){
 
-
+   
 require('../../vues/head_admin.php');
 
 ?>
@@ -11,20 +11,28 @@ require('../../vues/head_admin.php');
 <?php
 
 require('../../vues/sidebar_admin.php');
-
+$home = $pdo->query("SELECT * FROM home");
+$h = $home->fetch();
 ?>
+<header>
+<label class='update' for='update-home'>Mettre à jour</label>
+
+</header>
+
+
+
 
 <section class='editer-informations-principales'>
 <h1 class='titre-editer'>Editer la Home</h1>
 <div class='section-formations'>
 <h3>Formations</h3>
-
+<form enctype='multipart/form-data' method="POST" action='/valarep/admin/index.php?action=editer-home'>
 <div class='block-formation'>
 <div class='titre-formation'>
     <div class='trait-bleu'></div>
 <span>Informatique</span>
 </div>
-<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
+<textarea name='informatique'><?= $h['TextInformatique'];  ?></textarea>
 </div>
 
 
@@ -33,7 +41,7 @@ require('../../vues/sidebar_admin.php');
     <div class='trait-bleu'></div>
 <span>Batiments et industries</span>
 </div>
-<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
+<textarea name='batiments'><?= $h['TextBatiments'];  ?></textarea>
 </div>
 
 <div class='block-formation'>
@@ -41,7 +49,7 @@ require('../../vues/sidebar_admin.php');
     <div class='trait-bleu'></div>
 <span>Restauration</span>
 </div>
-<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
+<textarea name='restauration'><?= $h['TextRestauration'];  ?></textarea>
 </div>
 </div>
 
@@ -51,12 +59,12 @@ require('../../vues/sidebar_admin.php');
 
 <div class='contenu-notre-role'>
     <div>
-<img class='img-role' src='/valarep/images/role.jpg'/>
+<img class='img-role' src='/valarep/images_uploads/home/<?= $h['ImgRole'];  ?>'/>
 </div>
-<div class='block'>
-<textarea class='text-notre-role'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
-<label class='update' for='update-img-role'>Changer image notre role<label>
-<input class='displayNone' type='file' id='update-img-role' />
+<div class='text-role'>
+<textarea name='text-role' class='textarea-role'><?= $h['TextRole'];  ?></textarea>
+<label class='update' for='update-img-role'>Changer image <label>
+<input name='img-role' class='displayNone' type='file' id='update-img-role' />
 </div>
 </div>
 </div>
@@ -65,18 +73,24 @@ require('../../vues/sidebar_admin.php');
 <div class='lycee-dampierre'>
 
 <div class='contenu-lycee-dampierre'>
-<img class='img-dampierre' src='/valarep/images/dampierre.jpg'/>
-<div>
-    output_add_rewrite_var
+<img class='img-dampierre' src='/valarep/images_uploads/home/<?= $h['ImgDampierre'];  ?>'/>
+<div class='text-dampierre'>
+<textarea name='text-dampierre' class='textarea-dampierre'><?= $h['TextDampierre'];  ?></textarea>
+<label class='update' for='update-img-dampierre'>Changer image <label>
+<input name='img-dampierre' class='displayNone' type='file' id='update-img-dampierre' />
 </div>
 </div>
 
-
+<input class='displayNone' name='editer-home' type='submit' id='update-home'/>
+</form>
 </section>
 
 
 <?php
 
+}else{
+
+    header("Location: /valarep/admin");
 }
 include('../../vues/scripts.php');
 ?>

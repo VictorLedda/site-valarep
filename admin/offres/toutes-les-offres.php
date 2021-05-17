@@ -21,7 +21,7 @@ require('../../vues/sidebar_admin.php');
 <label for='update' class='update displayNone'>Mettre à jour</label>
 
 </header>
-<h2 class='titre-tous-les-contacts'>Tous les contacts</h2>
+<h2 class='titre-tous-les-contacts'>Toutes les offres</h2>
 
 <section class='tous-les-contacts'>
 

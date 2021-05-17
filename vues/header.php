@@ -28,7 +28,7 @@ include('C:\wamp64\www\valarep\config\bdd.php');
 <div>
 <header class='header is-normal-header header-normal-none'>
 
-<a  href='/valarp/index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
+<a  href='/valarep/index.php'><img class='logo is-normal-menu' src='/valarep/images/logo-png.png' /></a>
 
 <nav>
     <ul class='menu'>

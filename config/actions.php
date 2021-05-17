@@ -17,5 +17,7 @@ $listeDesActions = array(
     "editer-offres" => "../traitements/editer-offre.php",
     "supp-offre" => "../traitements/supprimer-offre.php",
     "image-chateau" => "../traitements/ajout-image-chateau.php",
-    "editer-photo-chateau" => "../traitements/editer-photo-chateau.php"
+    "editer-photo-chateau" => "../traitements/editer-photo-chateau.php",
+    "editer-home" => "../traitements/editer-home.php",
+    "editer-partenaires" => "../traitements/editer-partenaires.php"
 );

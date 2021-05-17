@@ -88,3 +88,19 @@ require('../../vues/errors/ajout-contact.php');
 include('../../vues/scripts.php');
 
 ?>
+<section>
+
+
+
+
+
+</section>
+
+<?php
+
+}else{
+
+    header("Location: /valarep/admin");
+}
+include('../../vues/scripts.php');
+?>

@@ -31,7 +31,20 @@ input[type=button]:hover{
 .outer {
     margin: 50px;
   }
-  .telecharger-documentation, .lycee-dampierre-button {
+  .telecharger-documentation{
+    border: 1px solid #649fba;
+    border-radius: 3px;
+    display: block;
+    color: #649fba;
+    font-family: 'Architects Daughter', cursive;
+    background: linear-gradient(to right, #649fba 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  .lycee-dampierre-button {
+    padding: 8px 13px 8px 13px;
+    font-size: 20px;
     border: 1px solid #649fba;
     border-radius: 3px;
     display: block;
